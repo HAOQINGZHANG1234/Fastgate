@@ -193,6 +193,7 @@ Ann Authors
 \end_layout
 
 \begin_layout Affiliation (alternate)
+
 \begin_inset Argument 1
 status open
 
@@ -211,6 +212,7 @@ Second Author
 \end_layout
 
 \begin_layout Author Email
+
 Second.Author@institution.edu
 \end_layout
 
@@ -511,7 +513,7 @@ Light induced the energy shift of atoms, which we call ac-Stack shift, it's
 \begin_inset Formula $\textrm{\textrm{\mathbf{\textrm{\textrm{2S_{1/2}|F=1,m_{F}=0>}}}}}$
 \end_inset
 
-with an energy spliting 
+ with an energy spliting 
 \begin_inset Formula $\delta=2\pi\times12.6428GHz$
 \end_inset
 
@@ -519,7 +521,7 @@ with an energy spliting
 \begin_inset Formula $\Delta=-200GHz$
 \end_inset
 
- (red detuning), and the virtual energy level: 
+ (read detuning), and the virtual energy level 
 \begin_inset Formula $\mathbf{\textrm{2P_{1/2}|F=1,m_{F}=1>}}$
 \end_inset
 
@@ -528,7 +530,6 @@ with an energy spliting
 \end_inset
 
 .
- So both ground hyperfine states will suffer from energy level down.
  We can obtain:
 \end_layout
 
@@ -571,7 +572,7 @@ In the discussion, we explict two kinds of the dipole trap: the Foucs-beam
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U_{Foucs}=Ue^{-2(\frac{x}{\sigma})^{2}}\simeq U_{dip}[1-2(\frac{x}{\sigma})^{2}]
+U_{Foucs}=Ue^{2(\frac{x}{\sigma})^{2}}\simeq U_{dip}[1-2(\frac{x}{\sigma})^{2}]
 \end{equation}
 
 \end_inset
@@ -604,7 +605,7 @@ U_{Stand}\simeq U_{dip}\cos^{2}(kx)[1-2(\frac{x}{\sigma^{'}})^{2}]\simeq U_{dip}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\omega_{Stand,x}=k\sqrt{-\frac{2U_{dip}}{m}}
+\omega_{Stand,x}=\hbar k\sqrt{-\frac{2U_{dip}}{m}}
 \end{equation}
 
 \end_inset
