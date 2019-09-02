@@ -1,0 +1,25 @@
+language: python
+
+branches:
+  only:
+  - master
+
+python:
+  - 3.6
+
+install:
+  - pip install coverage
+  - pip install coveralls
+  - pip install numpy
+  - pip install scipy
+  - pip install matplotlib
+  - pip install cython
+  - pip install qutip
+  - pip install sympy
+
+script:
+  - coverage run -m unittest discover -t ..
+
+after_success:
+  - coverage combine
+  - coveralls

@@ -1,0 +1,1159 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\options reprint, aps
+\use_default_options false
+\begin_modules
+subequations
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+This is a template \SpecialChar LyX
+ file for articles to be submitted to the American Physical
+ Society (APS).
+ APS uses the \SpecialChar LaTeX
+ class REV\SpecialChar TeX
+ for submissions.
+ For general information about REV\SpecialChar TeX
+ and the latest author guide see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://journals.aps.org/revtex
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The style of the document is specified by options in the document preamble!
+ For the right document class options, have a look at the elsarticle documentati
+on: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://journals.aps.org/files/revtex/summary4-1.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+This file uses the option 
+\family sans
+aps
+\family default
+ for the 
+\emph on
+American Physical Society
+\emph default
+ styling and the option 
+\family sans
+reprint
+\family default
+ for a layout close to the final journal.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Preprint
+APS/123-QED
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Use the Preprint layout to place your local institutional report number
+ in the upper righthand corner of the title page in preprint mode.
+ Multiple Preprint layouts are allowed.
+ Use the document class option 
+\family sans
+preprintnumbers
+\family default
+ under 
+\family sans
+Documents\SpecialChar menuseparator
+Settings
+\family default
+ to override the journal defaults to display numbers if necessary.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Note book on Fast Gate
+\end_layout
+
+\begin_layout Subsection
+Hamiltonian of system
+\end_layout
+
+\begin_layout Subsubsection
+Focused Gaussian laser beam trap and Standing wave trap
+\end_layout
+
+\begin_layout Standard
+Light induced shift of the atoms energy level, so call ac-Stack shift, can
+ bring trapping effect.
+ For example, an atom in the ground state acts as a potential 
+\begin_inset Formula $U_{dip}$
+\end_inset
+
+ in which the atom moves.
+ In the case of frequency detuning to red, the dipole force acts in the
+ direction of increasing 
+\begin_inset Formula $I$
+\end_inset
+
+: atoms in a tight-focused laser beam are attracted towads the region of
+ high intensity, both in racial direction and along the axis of the beam.
+ The dipole force confine the atom and create a dipole trap.
+ The optical dipole force is strong in a standing wave condition because
+ the intensity changes a lot in the scaling of wavelength.
+\end_layout
+
+\begin_layout Standard
+Our qubit is defined by the ground hyperfine states of 
+\begin_inset Formula $\mathbf{\textrm{171Yb^{+}}}$
+\end_inset
+
+ ions: 
+\begin_inset Formula $\mathbf{\textrm{2S_{1/2}|F=0,m_{F}=0>}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\textrm{\textrm{\mathbf{\textrm{\textrm{2S_{1/2}|F=1,m_{F}=0>}}}}}$
+\end_inset
+
+ with an energy spliting 
+\begin_inset Formula $\delta=2\pi\times12.6428G$
+\end_inset
+
+Hz with the beam having a mean detuning 
+\begin_inset Formula $\Delta=-200G$
+\end_inset
+
+Hz (read detuning), and the virtual energy level 
+\begin_inset Formula $\mathbf{\textrm{2P_{1/2}|F=1,m_{F}=1>}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\textrm{2P_{1/2}|F=1,m_{F}=-1>}$
+\end_inset
+
+.
+ Because of the red detuning of the laser beam, both ground state hyperfine
+ states will have energy level shift down.
+ We can obtain
+\begin_inset CommandInset citation
+LatexCommand citep
+key "grimm_optical_2000"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{dip,i}=\frac{3\pi c^{2}\Gamma}{2\omega_{0}^{3}}\sum_{j}\frac{c_{ij}^{2}}{\Delta_{ij}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+U_{dip,F=0}(r)=\frac{\pi c^{2}\Gamma}{\omega_{0}^{3}(\Delta-\delta/2)}I(r)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{dip,F=1}(r)=\frac{\pi c^{2}\Gamma}{\omega_{0}^{3}(\Delta+\delta/2)}I(r)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta_{ij}$
+\end_inset
+
+ is the detuning from resonance between level i and j, the CG coefficient
+ between ground state and virtual energy level is 
+\begin_inset Formula $\pm\sqrt{\frac{1}{3}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ is the freqency of the laser beam.
+ The light intensity has the form of Gauss beam: 
+\begin_inset Formula $I(r,z)=I_{0}\left(\frac{\sigma_{0}}{\sigma}\right)^{2}\exp\left(\frac{-2r^{2}}{\sigma^{2}}\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $\sigma(z)=\sigma_{0}\sqrt{1+\left(\frac{z}{z_{\mathrm{R}}}\right)^{2}}$
+\end_inset
+
+.
+ The foucs Gauss beam light vertical to the ion chain.
+ So the restraint of the atom in the racial direction has the form of
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{Foucs}=U_{dip}e^{2(\frac{x}{\sigma})^{2}}\simeq U_{dip}[1-2(\frac{x}{\sigma})^{2}]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\omega_{Foucs,x}=\sqrt{-\frac{4U_{dip}}{m\sigma^{2}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The standing wave field provides a stronger confine: the raman beam progate
+ in the opposite direction with the wavevector 
+\begin_inset Formula $k$
+\end_inset
+
+ and 
+\begin_inset Formula $-k$
+\end_inset
+
+, this gives the atom an impluse of 
+\begin_inset Formula $2k$
+\end_inset
+
+.
+ For a frequency detuning to the red, a standing wave of light trap atoms
+ at the anti-node confinement in the racial direction has the form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{Stand}\simeq U_{dip}\cos^{2}(kx)[1-2(\frac{x}{\sigma^{'}})^{2}]\simeq U_{dip}\cos^{2}(kx)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\omega_{Stand,x}=k\sqrt{-\frac{2U_{dip}}{m}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When two raman beam have a detuning, the walking wave field pushing ions
+ periodic and the ions will feel the state-dependent force.
+ The different states experience different trajects in the phase space,
+ which means the state-dependent phase is obtained.
+ The more detail will be discussed later.
+\end_layout
+
+\begin_layout Subsubsection
+The Hamiltonian
+\end_layout
+
+\begin_layout Standard
+We can obtain both from the original interaction between the laser and atom
+ and the energy shift.
+ The former one:
+\begin_inset Formula 
+\begin{align}
+\hat{H}= & \frac{\hat{p}^{2}}{2m}+\frac{1}{2}k_{0}\hat{x}^{2}+(\Omega_{Stand}e^{i(k\hat{x}-\omega t)}+\Omega_{Stand,SDF}e^{i(k\hat{x}-\omega t)}\otimes\sigma_{z}\nonumber \\
+ & -[1-2(\frac{\hat{x}}{\sigma})^{2}]\Omega_{Foucs}e^{-i\omega t}-[1-2(\frac{\hat{x}}{\sigma})^{2}]\Omega_{Foucs,SDF}e^{-i\omega t}\otimes\sigma_{z})+C.C.\label{eq:Hamiltonian}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From energy shift:
+\end_layout
+
+\begin_layout Wide Text
+\begin_inset Formula 
+\begin{align}
+\hat{H} & =\frac{\hat{p}^{2}}{2m}+\frac{1}{2}k_{0}\hat{x}^{2}+(U_{Foucs,0}+U_{Stand,0})\left|0\right\rangle \left\langle 0\right|+(U_{Foucs,1}+U_{Stand,1})\left|1\right\rangle \left\langle 1\right|\nonumber \\
+ & =\frac{\hat{p}^{2}}{2m}+\frac{1}{2}(k_{0}-\frac{4\pi c^{2}\Gamma}{\sigma^{2}\omega_{0}^{3}\Delta}I_{Foucs}-\frac{k^{2}}{m}\frac{2\pi c^{2}\Gamma}{\omega_{0}^{3}\Delta}I_{Stand}\cos(\mu t))\hat{x}^{2}+(\frac{\pi c^{2}\Gamma\delta}{\omega_{0}^{3}\Delta^{2}}I_{Stand}\cos(2k\hat{x}+\mu t)+\frac{4\pi c^{2}\Gamma\delta}{\omega_{0}^{3}\sigma^{2}\Delta^{2}}I_{Foucs}\hat{x}^{2})\varotimes\sigma_{z}\nonumber \\
+ & \simeq\frac{\hat{p}^{2}}{2m}+\frac{1}{2}(k_{0}-\frac{4\pi c^{2}\Gamma}{\omega_{0}^{3}\text{\ensuremath{\sigma^{2}}}\Delta}I_{Foucs})\hat{x}^{2}+\hbar\frac{\pi c^{2}\Gamma\delta}{\omega_{0}^{3}\Delta^{2}\hbar}I_{Stand}\cos(2k\hat{x}+\mu t)\varotimes\sigma_{z}\nonumber \\
+ & =\sum_{j}\frac{\hat{p_{j}}^{2}}{2m}+\frac{1}{2}(k_{0,j}+\nu_{Focus,j})\hat{x_{j}}^{2}+\hbar\Omega_{Stand,j}\cos(2k\hat{x_{j}}+\mu t)\varotimes\sigma_{z}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{Foucs}$
+\end_inset
+
+ and 
+\begin_inset Formula $I_{Stand}$
+\end_inset
+
+ are the intensity of foucs and standing wave in the waist position, 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is the frequency shift between the raman beam.
+ We can define:
+\begin_inset Formula 
+\begin{equation}
+2k\hat{x}_{j}=\sum_{m}b_{j}^{m}2k\sqrt{\frac{\hbar}{2M\nu_{m}}}(a_{m}+a_{m}^{+})=\sum_{m}b_{j}^{m}\eta_{m}(a_{m}+a_{m}^{+})\,,
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $\eta_{m}$
+\end_inset
+
+ is the lamb-Dicke parameter of the mth motional modes, 
+\begin_inset Formula $a_{m},a_{m}^{+}$
+\end_inset
+
+ is the annihilation and creation operator of the mth montional modes, then
+ the interaction-picture Hamiltonian of the system can be simplied as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{I}=-\sum_{j,m=1}^{N}\hbar\Omega_{j}(t)b\eta_{m}(a_{m}e^{i\nu_{,m}t}+a_{m}^{+}e^{-i\nu_{,m}t})\sigma_{z}^{j}\,.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Two raman beam is perpendicular to both the foucs beam and the ion chain.
+ The index 
+\begin_inset Formula $j,m$
+\end_inset
+
+ are the sum of ion and modes.
+ The phase and the amplitude of the time-dependenat of the Raman beam adding
+ on the 
+\begin_inset Formula $jth$
+\end_inset
+
+ ion is included in 
+\begin_inset Formula $\Omega_{j}(t)$
+\end_inset
+
+.
+ To obtain a two-bits entanglement gate, we need two pairs of raman beam
+ and the foucs beam to address two ions in the ion chain.
+ Of course you can choose the different intensity and detuning between two
+ pairs.
+ We label the two operated ions 
+\begin_inset Formula $m,n$
+\end_inset
+
+ with defining 
+\begin_inset Formula $\theta_{m,n}^{k}(t)=\Omega_{m,n}\text{(t)}e^{i\nu_{k}t}$
+\end_inset
+
+ , and the geometric phase can be calculated as below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\hat{U} & =e^{-\int iH_{I}(t)/\hbar dt}\\
+ & =\Pi_{k}e^{i\int[g_{m}^{k}\theta_{m}^{k}(t)\sigma_{m}^{z}+g_{n}^{k}\theta_{n}^{k}(t)\sigma_{n}^{z}]dt}\\
+ & =\Pi_{k}D(\alpha_{m}^{k}(t)\sigma_{m}^{z})D(\alpha_{n}^{k}(t)\sigma_{n}^{z})e^{i\theta}e^{i\theta_{m,n}\sigma_{m}^{z}\sigma_{n}^{z}}\\
+a_{m,n}^{k} & =Im(\int\theta_{m,n}^{k}(t)dt)\\
+\theta_{m,n} & =2Im(\sum_{k}\iint g_{m}^{k}g_{n}^{k}\theta_{m}^{k}(t_{1})\theta_{n}^{*k}(t_{2})dt_{1}dt_{2})\\
+\theta & =Im(\sum_{k,m}\iint(g_{m}^{k})^{2}\theta_{m}^{k}(t_{1})\theta_{m}^{*k}(t_{2})dt_{1}dt_{2})
+\end{align}
+
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first part 
+\begin_inset Formula $a_{m}^{k}$
+\end_inset
+
+ is the displacement of the 
+\begin_inset Formula $mth$
+\end_inset
+
+ ion with the 
+\begin_inset Formula $kth$
+\end_inset
+
+ motional modes in the phase space.
+ So 
+\begin_inset Formula $a_{m}(t)=\sum_{k}a_{m}^{k}(t)a_{m}^{+}+a_{m}^{k*}(t)a_{m}$
+\end_inset
+
+ is the displacement of the 
+\begin_inset Formula $mth$
+\end_inset
+
+ ions after the gate time and we hope all the mode will come back to the
+ origin.
+ The second part is global phasr which is irrelevant with the spin.
+ The third part is the entanglement between two ions and we hope the integral
+ to be 
+\begin_inset Formula $\pi/4$
+\end_inset
+
+.
+ We need to optimize the laser parameter to satisfy the following constrain(
+\begin_inset Formula $\tau$
+\end_inset
+
+ is the gate time):
+\begin_inset Formula 
+\begin{align}
+a_{j}^{k}(\tau) & =0\\
+\theta_{m,n}(\tau) & =\frac{\pi}{4}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We only add laser pulse on 
+\begin_inset Formula $mth$
+\end_inset
+
+ and 
+\begin_inset Formula $nth$
+\end_inset
+
+ ion so only 
+\begin_inset Formula $\Omega_{m,n}\neq0$
+\end_inset
+
+ , so the first constrain only for j=m,n and k take all motional modes.
+\end_layout
+
+\begin_layout Subsubsection
+Further detail
+\end_layout
+
+\begin_layout Standard
+Given a intuitive understand of the process: the foucs beam woks as the
+ frequency tailoring, which will rearrange the modes.
+ The transverse mode is so close and may need more complicated waveform
+ and longer gate time.
+ Using the mode after rearrangement, two mode will be selected and have
+ a big gap with other modes.
+ Then the multiple ions optimal problem will be simplfied to two ions optimal
+ problem because the coupling between two ions and other ions is quite small.
+\end_layout
+
+\begin_layout Subsubsection
+Optimal result and Fidelity
+\end_layout
+
+\begin_layout Standard
+A lot of has talked about the optimal methods in laser sequence.
+ However, as the increasing of the number of ions the optimal process has
+ became harder and more controllable parameter is needed.
+ 1D N ions chain will involved in N motional modes, and the gap between
+ transverse modes will become tighter which makes it hard to address single
+ mode.
+ The gate time will increase and according to the former part: when operate
+ on M ions, 
+\begin_inset Formula $M\times N+\frac{N(N-1)}{2}$
+\end_inset
+
+ constrains needed to be considered which means more complex waveform or
+ more segments are required.
+ Just adding auxiliary frequence tailoring, the motional modes will be rearrange
+d.
+ In this paper, we will give a simple vision of optimize and show that this
+ methods really bring the convience in constructing fast and high-fidelity
+ entanglement gate.
+ We give an example of optimize the gate between the 
+\begin_inset Formula $5th$
+\end_inset
+
+ and 
+\begin_inset Formula $6th$
+\end_inset
+
+ ions in a ten ions chain.
+ The waveform is chosen to be simple: 
+\begin_inset Formula $\Omega_{m,n}=\Omega\sin(\mu t+\phi(t))$
+\end_inset
+
+, amplitude of the raman beams 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ is setting to be constant, 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is the detuning between the beam and 
+\begin_inset Formula $\phi(t)$
+\end_inset
+
+ is the additional initial phase.
+ We choose 
+\begin_inset Formula $\mu$
+\end_inset
+
+to be constant and divide 
+\begin_inset Formula $\phi(t)$
+\end_inset
+
+ into 4 parts.
+ The gate time is fixed to be 
+\begin_inset Formula $\text{\tau}=5\,\mu s$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi(t)$
+\end_inset
+
+ is antisymmetry with 
+\begin_inset Formula $\tau/2$
+\end_inset
+
+ (every segement is setting to be constant) 
+\begin_inset Formula 
+\begin{equation}
+\phi(t)=\begin{cases}
+\phi_{1} & [0,\tau_{1}]\\
+\phi_{2} & [\tau_{1},\frac{\tau}{2}]\\
+-\phi_{2} & [\frac{\tau}{2},\tau-\tau_{1}]\\
+-\phi_{1} & [\tau-\tau_{1},\tau]
+\end{cases}\,,
+\end{equation}
+
+\end_inset
+
+so only 3 optimal parameter (
+\begin_inset Formula $\tau_{1},\phi_{1},\phi_{2}$
+\end_inset
+
+) is needed.
+ 
+\begin_inset Formula $\Omega_{Stand}$
+\end_inset
+
+ is setting to satisfy 
+\begin_inset Formula $\theta_{m,n}(\tau)=\frac{\pi}{4}$
+\end_inset
+
+ and to be same for two ions(if considering more ions gate the different
+ amplitude is needed).
+ The simple waveform means the optimize become simpler.
+ All the integral can be calculate analytically.
+ The 
+\begin_inset Formula $\phi(t)$
+\end_inset
+
+ have four segments:
+\end_layout
+
+\begin_layout Wide Text
+\begin_inset Formula 
+\begin{equation}
+\Theta_{m,n}^{j,j^{'}}=\begin{cases}
+\intop_{t_{j-1}}^{t_{j}}dt_{1}\intop_{t_{j'-1}}^{t_{j'}}dt_{2}\sin(\mu t_{1}+\phi_{j})\sin(\mu t_{2}+\phi_{j'})\sin(\omega_{k}(t_{1}-t_{2})) & j>j'\\
+\intop_{t_{j-1}}^{t_{j}}dt_{1}\intop_{t_{j-1}}^{t_{1}}dt_{2}\sin(\mu t_{1}+\phi_{j})\sin(\mu t_{2}+\phi_{j})\sin(\omega_{k}(t_{1}-t_{2})) & j=j'\\
+0 & j<j'
+\end{cases}\,\,,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\text{\ensuremath{\theta_{m,n}=2\sum_{k}\sum_{j,j'}g_{m}^{k}g_{n}^{k}\Theta_{m,n}^{j,j'}}}\,,
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+a_{m,n}^{k}=\int dt\sin(\mu t+\phi(t))e^{i\nu_{k}t}\,,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The real and image part can be calculate.
+ Because 
+\begin_inset Formula $\nu_{Focus}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Omega_{Stand}$
+\end_inset
+
+ part can be control independently, 
+\begin_inset Formula $\nu_{Focus}$
+\end_inset
+
+ can also to be adjusted to change distribution.
+ But we don't do this for simplification.
+ There is always a big gap between two modes and the other modes, so only
+ the constrains on enclose in the phase space became simple because you
+ only to optimize COM mode and stench mode(other modes are so small for
+ their coupling 
+\begin_inset Formula $b_{j}^{m}$
+\end_inset
+
+).
+ The gate fidelity can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+F & =|<\psi_{ideal}|U(\tau)\psi_{0}>|^{2}\\
+ & =\frac{1}{8}\left[2+2\left(\Gamma_{i}+\Gamma_{j}\right)+\Gamma_{+}+\Gamma_{-}\right]
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\Gamma_{i(j)}=\exp\left[-\sum_{k}\left|\alpha_{i(j)}^{k}(\tau)\right|^{2}\overline{\beta}_{k}/2\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\Gamma_{\pm}=\exp\left[-\sum_{k}\left|\alpha_{i}^{k}(\tau)\pm\alpha_{j}^{k}(\tau)\right|^{2}\overline{\beta}_{k}/2\right]$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "duan_scaling_2004"
+literal "false"
+
+\end_inset
+
+.
+ As the 
+\begin_inset Formula $\theta_{m,n}=\frac{\pi}{4}$
+\end_inset
+
+ can be always satisfied the optimal function can be written as:
+\begin_inset Formula 
+\begin{equation}
+\sum_{k=c,s}\sum_{j=m,n}|a_{j}^{k}|^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the optimal process, sometimes over optimization may appear: 
+\begin_inset Formula $|a_{m,n}^{c,s}|^{2}$
+\end_inset
+
+ can decline to 
+\begin_inset Formula $10^{-9}$
+\end_inset
+
+ and the other displacement remains 
+\begin_inset Formula $10^{-6}$
+\end_inset
+
+.
+ So regularization term(
+\begin_inset Formula $\sum_{allmodes}\sum_{j=m,n}|a_{j}^{k}|^{2}$
+\end_inset
+
+) can be considered into and the resullt can be more stabilizing.
+ The optimal function can be futher rewritten as:
+\begin_inset Formula 
+\begin{equation}
+\sum_{k=c,s}\sum_{j=m,n}|a_{j}^{k}|^{2}+\beta\sum_{allmodes}\sum_{j=m,n}|a_{j}^{k}|^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To make phase space displacement become more average.
+ In the following, we give an example of optimize the phase gate in the
+ 10 ions chain.
+ The result of the gate between the neighbour 5th and 6th ion is showed
+ in the following scheme.
+ In Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TwoIonGateSimulation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we take the operated 5th ion for example.
+ The extra frequency by the dipole is set to be 
+\begin_inset Formula $2\pi\times$
+\end_inset
+
+2MHz.
+ The gate time is set to be 5
+\begin_inset Formula $\mu s$
+\end_inset
+
+ and the optimization parameter is the phase 
+\begin_inset Formula $\phi_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\phi_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TwoIonGateSimulation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(a,b) shows the stimulated trajectory of the 5th ion coupling to the COM
+ mode and the strench mode which the circle return to the origin after the
+ gate time.
+ We give the opitimization result without specially optimizing for the other
+ mode but it's easy to observe that the other mode leave their origin at
+ scale of 
+\begin_inset Formula $10^{-3}$
+\end_inset
+
+.
+ It's because the frenquency tailoring which rearrange the motional mode,
+ selecting out only two modes and reducing the coupling between ions and
+ the other modes.
+ Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Detuning-error"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the robustness of this scheme: the gate error is plotted as the function
+ of the frequency drifts.
+ We find that the gate can tolerate frequency errors up to 
+\begin_inset Formula $2$
+\end_inset
+
+ KHz under the typical error threshold for high-fidelity gates 0.01%.
+ To show the method bring convenience in optimization procedure, we plot
+ the result with different optimal functions for all modes and two modes
+ in Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Detuning-error"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The result has slight differences as expected.
+\end_layout
+
+\begin_layout Standard
+To show the Scalability of the scheme, we give an example in Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Scalability"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ of two ion gate in 101 ions chain.
+ The first operated one is the 51th ion (center) and the ion distance shows
+ the distance between the first ion and the second ion.
+ The gate time is set to be 5 
+\begin_inset Formula $\text{\ensuremath{\mu}s}$
+\end_inset
+
+.
+ The optimize parameters are detuning, two phases 
+\begin_inset Formula $\phi_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\phi_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+.
+ The initial value of the detuning is set to be 
+\begin_inset Formula $\omega+4\pi/\tau\thickapprox2\pi\times1.4$
+\end_inset
+
+ MHz.
+ As the increaing of the distance between two ions, the coupling becomes
+ weaker thus the optimization becomes harder.
+ Without the
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/TwoIonGate.svg
+	width 90col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TwoIonGateSimulation"
+
+\end_inset
+
+Simulated phase space trajectory.
+ The horizontal and vertical axes represent 
+\begin_inset Formula $x_{k}^{j}\sim b_{k}^{j}(a_{k}+a_{k}^{+})$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{k}^{j}\sim ib_{k}^{j}(a_{k}^{+}-a_{k})$
+\end_inset
+
+.
+ The following take motional trajectory 
+\begin_inset Formula $a_{k}^{j}$
+\end_inset
+
+ of the operated 5th ion for example.
+ (a) the trajectorys of 5th ion coupling to the COM mode.
+ (b) the trajectorys of 5th ion coupling to the strench mode.
+ (c) the end points of the other mode in the phase space without specially
+ optimization for them.
+ (d) Accumulation of the state-dependent phase over the evolution time.
+ All the coupling strengths optimized to obtained the desired 
+\begin_inset Formula $\pi/4$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/detuningRobusty 2.pdf
+	lyxscale 50
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Detuning-error"
+
+\end_inset
+
+Simulated gate error: the error of detuning between the Raman beam.
+ The red dashed line represent the typical error threshold for high-fidelity
+ gates is 0.01%, and the gate we optimized can tolerate frequency error up
+ to 
+\begin_inset Formula $\pm2$
+\end_inset
+
+ kHz.
+ The blue line represents optimization for all modes and the orange line
+ represents optimization for two modes.
+ It can be seen there are only slight differences between them.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/scaling.pdf
+	lyxscale 60
+	width 90col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Scalability"
+
+\end_inset
+
+Example of the Scalability in this scheme: Stimulated gate error of two
+ ion gate in the 101 ions chain.
+ The first operated one is the 51th ion (center) and the ion distance shows
+ the distance between the first ion and the second ion.
+ The square points shows the optimized result and the line represents the
+ fitted curve.
+ The red one is the result with frequency tailoring and the blue one is
+ the result without frequency tailoring.
+ It can be found that without tailoring, the gate becomes hard to optimize
+ with the distance between two operated ions increasing to five.
+ While using freqency tailoring the gate fidelity remains high even the
+ distance incresing to 20.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "Ref/FastOperation/FastOperation"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

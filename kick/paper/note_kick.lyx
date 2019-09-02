@@ -181,7 +181,7 @@ Settings
 \end_layout
 
 \begin_layout Title
-Note book on Fast Gate
+Note book on quantum gate with ultrafast operations
 \end_layout
 
 \begin_layout Thanks
@@ -489,186 +489,23 @@ Lowercase
 \end_layout
 
 \begin_layout Subsection
-Hamiltonian of system
+Experiment setup
+\end_layout
+
+\begin_layout Subsection
+Quantum gate with fast kick
 \end_layout
 
 \begin_layout Subsubsection
-Focused Gaussian laser beam trap and Standing wave trap
+ultrafast operation with adabatic pluse
 \end_layout
 
 \begin_layout Standard
-Light induced the energy shift of atoms, which we call ac-Stack shift, it's
- the basement of optical dipole trap.
- Our qubit is defined by the ground hyperfine states of 
-\begin_inset Formula $\mathbf{\textrm{171Yb^{+}}}$
-\end_inset
-
- ions: 
-\begin_inset Formula $\mathbf{\textrm{2S_{1/2}|F=0,m_{F}=0>}}$
-\end_inset
-
- and 
-\begin_inset Formula $\textrm{\textrm{\mathbf{\textrm{\textrm{2S_{1/2}|F=1,m_{F}=0>}}}}}$
-\end_inset
-
-with an energy spliting 
-\begin_inset Formula $\delta=2\pi\times12.6428GHz$
-\end_inset
-
- with the beam having a mean detuning 
-\begin_inset Formula $\Delta=-200GHz$
-\end_inset
-
- (red detuning), and the virtual energy level: 
-\begin_inset Formula $\mathbf{\textrm{2P_{1/2}|F=1,m_{F}=1>}}$
-\end_inset
-
- and 
-\begin_inset Formula $\textrm{2P_{1/2}|F=1,m_{F}=-1>}$
-\end_inset
-
-.
- So both ground hyperfine states will suffer from energy level down.
- We can obtain:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-U_{dip,i}=\frac{3\pi c^{2}\Gamma}{2\omega_{0}^{3}}\sum_{j}\frac{c_{ij}^{2}}{\Delta_{ij}}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-U_{dip,F=0}(r)=\frac{\pi c^{2}\Gamma}{\omega_{0}^{3}(\Delta-\delta/2)}I(r)
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-U_{dip,F=1}(r)=\frac{\pi c^{2}\Gamma}{\omega_{0}^{3}(\Delta+\delta/2)}I(r)
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In the discussion, we explict two kinds of the dipole trap: the Foucs-beam
- trap and the Standing wave trap.
- The optical potential shows the following forms:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-U_{Foucs}=Ue^{-2(\frac{x}{\sigma})^{2}}\simeq U_{dip}[1-2(\frac{x}{\sigma})^{2}]
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\omega_{Foucs,x}=\sqrt{-\frac{4U_{dip}}{m\sigma^{2}}}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-U_{Stand}\simeq U_{dip}\cos^{2}(kx)[1-2(\frac{x}{\sigma^{'}})^{2}]\simeq U_{dip}\cos^{2}(kx)
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\omega_{Stand,x}=k\sqrt{-\frac{2U_{dip}}{m}}
-\end{equation}
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Subsubsection
-The Hamiltonian
-\end_layout
-
-\begin_layout Standard
-We can obtain both from the original interaction between the laser and atom
- and the energy shift.
- The former one:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\hat{H}=\frac{\hat{p}^{2}}{2m}+\frac{1}{2}k_{0}\hat{x}^{2}+(\Omega_{Stand}e^{i(k\hat{x}-\omega t)}+\Omega_{Stand,SDF}e^{i(k\hat{x}-\omega t)}\otimes\sigma_{z}-[1-2(\frac{\hat{x}}{\sigma})^{2}]\Omega_{Foucs}e^{-i\omega t}-[1-2(\frac{\hat{x}}{\sigma})^{2}]\Omega_{Foucs,SDF}e^{-i\omega t}\otimes\sigma_{z})+C.C.
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-From energy shift:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\hat{H} & =\frac{\hat{p}^{2}}{2m}+\frac{1}{2}k_{0}\hat{x}^{2}+(U_{Foucs,0}+U_{Stand,0})|0><0|+(U_{Foucs,1}+U_{Stand,1})|1><1|\\
- & =\frac{\hat{p}^{2}}{2m}+\frac{1}{2}(k_{0}-\frac{4\pi c^{2}\Gamma}{\omega_{0}^{3}\text{\ensuremath{\sigma^{2}}}\Delta}I_{Foucs}-\frac{(\hbar k)^{2}}{m}\frac{2\pi c^{2}\Gamma}{\omega_{0}^{3}\Delta}I_{Stand}\cos(\mu t))\hat{x}^{2}+(\frac{\pi c^{2}\Gamma\delta}{\omega_{0}^{3}\Delta^{2}}I_{Stand}\cos(2k\hat{x}+\mu t)-\frac{4\pi c^{2}\Gamma\delta}{\omega_{0}^{3}\sigma^{2}\Delta^{2}}I_{Foucs}\hat{x}^{2})\varotimes\sigma_{z}\\
- & \simeq\frac{\hat{p}^{2}}{2m}+\frac{1}{2}(k_{0}-\frac{4\pi c^{2}\Gamma}{\omega_{0}^{3}\text{\ensuremath{\sigma^{2}}}\Delta}I_{Foucs})\hat{x}^{2}+\hbar\frac{\pi c^{2}\Gamma\delta}{\omega_{0}^{3}\Delta^{2}\hbar}I_{Stand}\cos(2k\hat{x}+\mu t)\varotimes\sigma_{z}\\
- & =\sum_{j}\frac{\hat{p_{j}}^{2}}{2m}+\frac{1}{2}(k_{0,j}+\nu_{Focus})\hat{x_{j}}^{2}+\hbar\Omega_{Stand,j}\cos(2k\hat{x_{j}}+\mu t)\varotimes\sigma_{z}
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We can define 
-\begin_inset Formula $2k\hat{x}_{j}=\sum_{k}b_{j}^{k}2k\sqrt{\frac{\hbar}{2M\omega_{k}}}(a_{k}+a_{k}^{+})=\sum_{k}b_{j}^{k}\eta_{k}(a_{k}+a_{k}^{+})$
-\end_inset
-
- , then the interaction-picture Hamiltonian of the system can be rewritten
- as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-H_{I}=-\sum_{j,k=1}^{N}\hbar\Omega_{j}\sin(\mu t)b_{j}^{k}\eta_{k}(a_{k}e^{i\omega_{,k}t}+a_{k}^{+}e^{-i\omega_{,k}t})\sigma_{z}^{j}
-\end{equation}
-
-\end_inset
-
-
+two ions c-phase gate
 \end_layout
 
 \end_body
