@@ -1,0 +1,203 @@
+
+Skip to Main Content
+
+    APS Logo
+
+    Journals
+        Back
+        Journals
+        Physical Review Letters
+        Physical Review X
+        Reviews of Modern Physics
+        Physical Review A
+        Physical Review B
+        Physical Review C
+        Physical Review D
+        Physical Review E
+        Physical Review Research
+        Physical Review Accelerators and Beams
+        Physical Review Applied
+        Physical Review Fluids
+        Physical Review Materials
+        Physical Review Physics Education Research
+        Physics
+        Physical Review
+        Physical Review (Series I)
+        Physics Physique Fizika
+    Help/Feedback
+
+    Search/Article Lookup
+    Chuan-Feng Li
+        Back
+        Chuan-Feng Li
+        Your Account
+        Log Out
+
+Physical Review A
+covering atomic, molecular, and optical physics and quantum information
+
+    Highlights
+    Recent
+    Accepted
+    Authors
+    Referees
+    Search
+    Press
+    About
+
+    Rapid Communication
+    Go Mobile »
+    Access by University of Science & Technology of China
+
+Implementation of Grover’s quantum search algorithm in a scalable system
+K.-A. Brickman, P. C. Haljan, P. J. Lee, M. Acton, L. Deslauriers, and C. Monroe
+Phys. Rev. A 72 , 050306(R) – Published 30 November 2005
+Article has an altmetric score of 7
+More
+×
+
+    Article
+    References
+    Citing Articles (69)
+
+PDF HTML Export Citation
+
+    Abstract 
+    Authors 
+    Article Text 
+
+ACKNOWLEDGEMENTS
+
+    References 
+
+Abstract
+
+We report the implementation of Grover’s quantum search algorithm in the scalable system of trapped atomic ion quantum bits. Any one of four possible states of a two-qubit memory is marked, and following a single query of the search space, the marked element is successfully recovered with an average probability of 60(2)%. This exceeds the performance of any possible classical search algorithm, which can only succeed with a maximum average probability of 50%.
+
+    Figure
+    Figure
+    Figure
+
+    Received 9 October 2005
+
+DOI: https://doi.org/10.1103/PhysRevA.72.050306
+
+©2005 American Physical Society
+Authors & Affiliations
+
+K.-A. Brickman , P. C. Haljan , P. J. Lee , M. Acton , L. Deslauriers , and C. Monroe
+
+    FOCUS Center and Department of Physics, University of Michigan, Ann Arbor, Michigan 48109, USA
+
+Click to Expand
+Article Text
+Click to Expand
+References
+
+Click to Expand
+Issue
+
+Vol. 72, Iss. 5 — November 2005
+Reuse & Permissions
+Authorization Required
+Log In
+Other Options
+
+    Buy Article »
+    Find an Institution with the Article »
+
+×
+Download & Share
+PDF Export Reuse & Permissions Citing Articles (69)
+
+    Tweet
+
+×
+Images
+
+    Figure 1
+    Figure 1
+    Schematic diagram of Grover’s quantum search algorithm over a space of n qubits ( N = 2 n entries). Initially, all qubits are prepared in the state ∣000…0⟩. (a) A global Hadamard gate prepares an equal superposition of all states. (b) The oracle (shaded in light gray) flips the sign of the amplitude corresponding to the marked element, represented by the n -bit binary number x . (c) Two global Hadamard gates surround an additional phase gate (shaded in dark gray) that flips the sign of the amplitude corresponding to the initial state ∣000…0⟩, amplifying the weight of the marked state. Steps (b) and (c) are repeated in sequence a prescribed number of times, and finally (d) the qubits are measured. An example of the distributions of quantum amplitudes at each stage is depicted at the right. Reuse & Permissions
+    Figure 2
+    Figure 2
+    Quantum circuit to implement Grover’s searching algorithm for N = 4 entries [ 1 ]. (a) Theoretical circuit using a third ancilla bit and standard gates including the Haddamard gate ( H ) , the generalized Toffoli gate, a bit flip X , and a controlled-NOT (CNOT) gate. The Toffoli gate implements the oracle (shaded in light gray), where the scheme to mark each of the four possibilities is shown below the circuit. The remainder of the circuit (shaded in dark gray) amplifies the weighting of the marked state. (b) The experimental circuit to implement the algorithm for n = 2 qubits, where R ( θ , ϕ ) is a rotation on the Bloch sphere [ 33 ], R z ( ϕ ) is a phase rotation about the ˆ z axis, and G MS is the Mølmer-Sørensen entangling gate. The light gray shaded box identifies the oracle, where the value of the variables α and β (given in the table), determine which state is marked [ 34 ]. The remainder of the circuit (shaded in dark gray) amplifies the weighting of the marked state. Reuse & Permissions
+    Figure 3
+    Figure 3
+    (a) Output of the algorithm. The conditional probability of measuring each of four output states given one was marked is shown in the sequence from top to bottom ∣00⟩, ∣01⟩, ∣10⟩, ∣11⟩. Each of the four data sets shows the distribution of measurements averaged over 500 trials. The marked state was recovered on average with 60(2)%, compared to unit probability for the ideal quantum algorithm and 50% for the best possible classical algorithm. (b) Output of the algorithm without the final entangling gate. This shows that the fidelity of the oracle is about 80%. Each of the four data sets was also averaged over 500 trials. The experimental average to recover the marked state is 41(2)% with the theoretical limit of 50%, both of which are less than the 60% from (a). The quoted errors are statistical. Reuse & Permissions
+
+1 of 3
+
+×
+
+Sign up to receive regular email alerts from Physical Review A
+More Links
+
+    APS
+    Current Issue
+    Earlier Issues
+    News & Announcements
+    About this Journal
+    Journal Staff
+    About the Journals
+    Join APS
+
+    Authors
+        General Information
+        Submit a Manuscript
+        Publication Rights
+        Open Access
+        Policies & Practices
+        Tips for Authors
+        Professional Conduct
+    Referees
+        General Information
+        Submit a Report
+        Update Your Information
+        Policies & Practices
+        Referee FAQ
+        Advice to Referees
+        Outstanding Referees
+    Librarians
+        General Information
+        Subscriptions
+        Online License Agreement
+        Usage Statistics
+        Your Account
+    Students
+        Physics
+        PhysicsCentral
+        Student Membership
+    APS Members
+        Subscriptions
+        Article Packs
+        Membership
+        FAQ
+        APS News
+        Meetings & Events
+
+    Privacy
+    Policies
+    Contact Information
+    Feedback
+
+ISSN 2469-9934 (online), 2469-9926 (print). ©2019 American Physical Society. All rights reserved. Physical Review A™ is a trademark of the American Physical Society, registered in the United States, Canada, European Union, and Japan. The APS Physics logo and Physics logo are trademarks of the American Physical Society. Information about registration may be found here . Use of the American Physical Society websites and journals implies that the user has read and agrees to our Terms and Conditions and any applicable Subscription Agreement .
+Log In
+Cancel
+
+    Forgot your username/password?
+    Create an account
+
+×
+Search
+Article Lookup
+Paste a citation or DOI
+Enter a citation
+Journal:
+Volume:
+Article:
+×
+Blogged by 1
+63 readers on Mendeley
+1 readers on CiteULike
+See more details | Close this
+×

@@ -1,0 +1,22 @@
+
+var Config = {
+		userAgent: navigator.userAgent.search("Chrome"),
+		nameSpace: (navigator.userAgent.search("Chrome") != -1) ? "" : "search\\:",
+		//REST_ROOT: "http://marklogicdev:8884/v1/resources/",
+		REST_ROOT: "/search_wrapper.cfm",
+		MAX_FACETS_LENGTH: 5,
+		MAX_FACETS_LENGTH_TERMS: 15,
+		BIG_MAX_FACETS: 2000,
+		isDebugging: false,
+		pageNumber: 1,
+        prevScroll: 0,
+        nextResults: false,
+        timeOutId: null,
+        numResults: 20,
+        journalListURL: "/search_data.cfm?type=journal",
+        conferenceListURL: "/search_data.cfm?type=conference",
+        categoryListURL: "/search_data.cfm?type=category",
+        //journalListURL: "http://marklogicdev:8884/v1/resources/journal",
+        //conferenceListURL: "http://marklogicdev:8884/v1/resources/conference",
+        //categoryListURL: "http://marklogicdev:8884/v1/resources/category",
+	};Config.baseUrl = Config.REST_ROOT;
