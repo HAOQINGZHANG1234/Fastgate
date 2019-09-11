@@ -895,7 +895,7 @@ is the single-phonon detuning.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{d\vec{s}}{dt}=\vec{\Omega}\times\vec{s},
+\frac{d\vec{s}}{dt}=\vec{\Omega}\times\vec{s}
 \end{equation}
 
 \end_inset
@@ -919,7 +919,7 @@ if the Bloch vector can adabaticly follow the
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-I_{x,y}(t)=I_{x,y}\sin(\pi t/\tau)
+I_{x,y}(t)=I_{x,y}\\sin(\pi t/\tau)
 \end{equation}
 
 \end_inset
@@ -930,25 +930,12 @@ I_{x,y}(t)=I_{x,y}\sin(\pi t/\tau)
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\delta(t)=\delta_{0}\cos^{2}(\pi t/\tau),
+\delta(t)=\delta_{0}\cos^{2}(\pi t/\tau)
 \end{equation}
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-where 
-\begin_inset Formula $\text{\ensuremath{\tau}}$
-\end_inset
-
- is the whole operation time and 
-\begin_inset Formula $I_{x,y}$
-\end_inset
-
- are the intensity of the bichromatic laser.
- ADVANTAGE OVER STIMULATE RAMAN PROCESS
 \end_layout
 
 \begin_layout Standard

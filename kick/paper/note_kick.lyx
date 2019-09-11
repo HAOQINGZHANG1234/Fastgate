@@ -378,28 +378,6 @@ Insert suggested PACS numbers here.
 33.15.Ta
 \end_layout
 
-\begin_layout Keywords
-Suggested keywords
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-optional; use the document class option 
-\family sans
-showkeys
-\family default
- if keyword should be displayed.
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Note
 status open
@@ -503,7 +481,7 @@ Quantum gate with fast kick
 \end_layout
 
 \begin_layout Subsubsection
-ultrafast operation with adabatic pulse
+Ultrafast operation with Adabatic Rapid Passage pulse
 \end_layout
 
 \begin_layout Standard
@@ -594,23 +572,383 @@ literal "false"
 \end_inset
 
 .
+ The Adiabatic Rapid Passage is also used in the ion trap on states shutling
+ and motional states cooling.
  We find that with increase the power of pulses which is the requirement
- of addressing single ion and optimize the parameter, we can achieve the
+ of addressing single ion and optimize the parameters, we can achieve the
  high speed and fidelity single qubit flipping and two qubit entanglement
  gate.
+ 
 \end_layout
 
 \begin_layout Standard
-We make a model of eight energy Yb171 + ion, which corresponds to the hyperfine
- energy level of 
-\begin_inset Formula $2S_{1/2}$
+We make a model of eight energy level 
+\begin_inset Formula $\mathbf{\textrm{171Yb^{+}}}$
 \end_inset
 
-, 
+ ions which shows in Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EightEnergyLevel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The qubits are encoded in the ground hyperfine states of 
+\begin_inset Formula $\mathbf{\textrm{171Yb^{+}}}$
+\end_inset
+
+ ions: 
+\begin_inset Formula $\mathbf{\textrm{2S_{1/2}|F=0,m_{F}=0>}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\textrm{\textrm{\mathbf{\textrm{\textrm{2S_{1/2}|F=1,m_{F}=0>}}}}}$
+\end_inset
+
+ with an energy spliting 
+\begin_inset Formula $\delta_{HF}=2\pi\times12.6428$
+\end_inset
+
+ GHz.
+ The raman beams are detuning by hundreds of GHz to 
+\begin_inset Formula $\mathbf{\textrm{2P_{1/2}}}$
+\end_inset
+
+and they are far less than the 100 THz spiltting between 
+\begin_inset Formula $\mathbf{\textrm{2P_{1/2}}}$
+\end_inset
+
+and 
+\begin_inset Formula $\mathbf{\textrm{2P_{3/2}}}$
+\end_inset
+
+.
+ So we do not need to consider the coupling to the 
+\begin_inset Formula $\mathbf{\textrm{2P_{3/2}}}$
+\end_inset
+
+and only see 
+\begin_inset Formula $\mathbf{\textrm{2P_{1/2}}}$
+\end_inset
+
+as the virtual energy level.
+ The hyperfine splitting between 
+\begin_inset Formula $\mathbf{\textrm{2P_{1/2}}}$
+\end_inset
+
+is 
+\begin_inset Formula $\delta_{1}=2\pi\times2105$
+\end_inset
+
+ MHz.
+ We consider the zeeman effect (
+\begin_inset Formula $2\pi\times1.4$
+\end_inset
+
+ MHz/G for 
+\begin_inset Formula $\mathbf{\textrm{2S_{1/2}}}$
+\end_inset
+
+ and 
+\begin_inset Formula $2\pi\times0.47$
+\end_inset
+
+ MHz/G for 
+\begin_inset Formula $\mathbf{\textrm{2P_{1/2}}}$
+\end_inset
+
+) and quadratic effect (
+\begin_inset Formula $2\pi\times310.8$
+\end_inset
+
+Hz/
+\begin_inset Formula $G^{2}$
+\end_inset
+
+) for 
+\begin_inset Formula $\mathbf{\textrm{171Yb^{+}}}$
+\end_inset
+
+ zeeman splitting.
+ Then we can define:
 \end_layout
 
-\begin_layout Subsubsection
-two ions c-phase gate
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+2S_{1/2}|F=0,m_{F}=0>\equiv|0>
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+2S_{1/2}|F=1,m_{F}=0>\equiv|1>
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+2P_{1/2}|F=1,m_{F}=-1>\equiv|2>
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+2P_{1/2}|F=1,m_{F}=1>\equiv|3>
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EightEnergyLevel"
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/scientist/Desktop/haoqing/Fastgate/kick/fig/eight_level.svg
+	lyxscale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the 
+\begin_inset Formula $\pi$
+\end_inset
+
+-polarized light cannot drive dipole transition between qubit states and
+ 
+\begin_inset Formula $\mathbf{\textrm{2P_{1/2}}}$
+\end_inset
+
+ energy level for corresponding dipole matrixs equal to zero.
+ Because:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sigma_{x}=1/2(\sigma^{+}+\sigma^{-})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sigma_{y}=1/2(\sigma^{+}-\sigma^{-}),
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula $\sigma^{+}$
+\end_inset
+
+can couple between 
+\begin_inset Formula $|0>,|1>$
+\end_inset
+
+to 
+\begin_inset Formula $|2>$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma^{+}$
+\end_inset
+
+can couple between 
+\begin_inset Formula $|0>,|1>$
+\end_inset
+
+to 
+\begin_inset Formula $|3>$
+\end_inset
+
+, we apply 
+\begin_inset Formula $\sigma_{x}$
+\end_inset
+
+and 
+\begin_inset Formula $\sigma_{y}$
+\end_inset
+
+ polarization light to drive the raman process.
+ The intensity of the bichromatic lights are set to satisfy the condition:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{I_{x}}{I_{y}}=\frac{\Delta-\delta_{0}}{\Delta+\delta_{0}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for AC-stark shifts are proportional to 
+\begin_inset Formula $\frac{I}{\Delta}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+\frac{I_{x}}{\Delta}+\frac{I_{y}}{\Delta+12.6}=\frac{I_{y}}{\Delta}+\frac{I_{x}}{\Delta-12.6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+to cancel the AC-stark shift on the qubit level caused by two lights and
+ 
+\begin_inset Formula $\Delta$
+\end_inset
+
+is the single-phonon detuning.
+ Adabatic Rapid Passage we used here is similer to methods derived from
+ nucler resonmance.
+ For the Raman ARP, the whole system can be viewed as an effective two-level
+ system: the rabi frequency is the two-phonon 
+\begin_inset Formula $\Omega_{eff}$
+\end_inset
+
+ here; the detuning across the resonance is the two-phonon detuning sweeping
+ during the invertion of population, where 
+\begin_inset Formula $\delta(t)=\delta_{HF}-(w_{y}-w_{x})$
+\end_inset
+
+.
+ The Bloch vector 
+\begin_inset Formula $\text{\ensuremath{\vec{s}}}$
+\end_inset
+
+ will precesses around the effective routation axis 
+\begin_inset Formula $|\Omega(t)|=\sqrt{\Omega_{eff}^{2}(t)+\delta^{2}(t)}$
+\end_inset
+
+, and satisfy:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{d\vec{s}}{dt}=\vec{\Omega}\times\vec{s},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if the Bloch vector can adabaticly follow the 
+\begin_inset Formula $\vec{\Omega}$
+\end_inset
+
+.
+ We generate the fast ARP pulse with the Intensity envelope 
+\begin_inset Formula $I(t)$
+\end_inset
+
+ and two-phonon detuning with the form following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I_{x,y}(t)=I_{x,y}\sin(\pi t/\tau)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta(t)=\delta_{0}\cos^{2}(\pi t/\tau),
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\text{\ensuremath{\tau}}$
+\end_inset
+
+ is the whole operation time and 
+\begin_inset Formula $I_{x,y}$
+\end_inset
+
+ are the intensity of the bichromatic laser.
+ DISADVANTAGE OVER STIMULATE RAMAN PROCESS.
 \end_layout
 
 \begin_layout Standard
