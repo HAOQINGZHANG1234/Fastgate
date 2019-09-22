@@ -193,7 +193,6 @@ Ann Authors
 \end_layout
 
 \begin_layout Affiliation (alternate)
-
 \begin_inset Argument 1
 status open
 
@@ -212,7 +211,6 @@ Second Author
 \end_layout
 
 \begin_layout Author Email
-
 Second.Author@institution.edu
 \end_layout
 
@@ -1072,7 +1070,7 @@ using the formula
  and the state flipping.
  In order to realize the ideal C-phase gate, the number of kicks once should
  equal to 2n to return the orignial state.
- So under the ideal situation, the momentum transfer has the form of:
+ So under the ideal situation, the momentum transfer has the form of:s
 \begin_inset Formula 
 \begin{equation}
 \Delta p=\Sigma_{i=1}^{N}\delta(t-t_{i})4\hbar n_{i}k
