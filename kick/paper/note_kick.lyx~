@@ -481,7 +481,7 @@ Quantum gate with fast kick
 \end_layout
 
 \begin_layout Subsubsection
-Ultrafast operation with Adabatic Rapid Passage pulse
+Ultrafast operation with Adabatic Rapid Passage(ARP) pulse
 \end_layout
 
 \begin_layout Standard
@@ -555,7 +555,7 @@ literal "false"
 \end_inset
 
  with mode-locked laser and create the two qubits entanglement gate.
- DISANDVANTAGE
+ DISANDVANTAGE OF THEIR METHOD.
 \end_layout
 
 \begin_layout Standard
@@ -578,11 +578,10 @@ literal "false"
  of addressing single ion and optimize the parameters, we can achieve the
  high speed and fidelity single qubit flipping and two qubit entanglement
  gate.
- 
 \end_layout
 
 \begin_layout Standard
-We make a model of eight energy level 
+METHOD: We make a model of eight energy level 
 \begin_inset Formula $\mathbf{\textrm{171Yb^{+}}}$
 \end_inset
 
@@ -743,7 +742,7 @@ name "fig:EightEnergyLevel"
 
 
 \begin_inset Graphics
-	filename C:/Users/scientist/Desktop/haoqing/Fastgate/kick/fig/eight_level.svg
+	filename /Users/zhq/Documents/GitHub/Fastgate/kick/fig/eight_level.svg
 	lyxscale 80
 
 \end_inset
@@ -948,14 +947,187 @@ where
 \end_inset
 
  are the intensity of the bichromatic laser.
- ADVANTAGE OVER STIMULATE RAMAN PROCESS
+ DISADVANTAGE OVER STIMULATE RAMAN PROCESS.
+\end_layout
+
+\begin_layout Standard
+BRAGG DIFFRACTION:
+\end_layout
+
+\begin_layout Standard
+SIMULATION RESULT:
+\end_layout
+
+\begin_layout Subsubsection
+Ultrafast entanglement gate with state-dependent momentum kick
+\end_layout
+
+\begin_layout Standard
+The idea of the ultrafast gate is first proposed by Cirac and Zoller[].
+ Here we realize it with the ARP pulse metioned above.
+ The key is we use the CW laser instead of pulse laser which get rid of
+ the problem of repitation rate, so the whole process becomes more flexible.
+ The basic idea is that the operation is faster than the trap frequecy so
+ the ions get a big momentum tranfer without moving.
+ If we consider the simple case: we have two ions and both irradiated by
+ the bichromatic light with the same intensity (same effective Rabi frequency
+ 
+\begin_inset Formula $\Omega_{eff}(t)$
+\end_inset
+
+ ) and single ion addressing.
+ The Hamilton can be written as: 
+\begin_inset Formula $H=H_{m}+H_{I}$
+\end_inset
+
+, where:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+H_{m} & =\hbar\omega_{c}a_{c}^{+}a_{c}+\hbar\omega_{s}a_{s}^{+}a_{s},\\
+H_{I} & =\hbar\frac{\Omega_{eff}(t)}{2}(\sigma_{1}^{+}e^{2ikx_{1}}+\sigma_{2}^{+}e^{2ikx_{2}}+H.C.)\\
+ & =\hbar\frac{\Omega_{eff}(t)}{2}(\left(\begin{array}{cc}
+0 & e^{2ikx_{1}}\\
+e^{-2ikx_{1}} & 0
+\end{array}\right)+\left(\begin{array}{cc}
+0 & e^{2ikx_{2}}\\
+e^{-2ikx_{2}} & 0
+\end{array}\right))\\
+ & =\hbar\frac{\Omega_{eff}(t)}{2}(\sigma_{1x}e^{2ikx_{!}\sigma_{1z}}+\sigma_{2x}e^{2ikx_{2}\sigma_{2z}}),
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\omega_{c,s}$
+\end_inset
+
+ is the frequency of center-of-mass (COM) mode and strench mode, 
+\begin_inset Formula $a_{c,s}^{+},a_{c,s}$
+\end_inset
+
+ is the form and annihilation operation for the corresponding mode, 
+\begin_inset Formula $\sigma_{ix,z}$
+\end_inset
+
+ is the Pauli operation of the ith ion.
+ Now we consider the situation: 1.
+ 
+\begin_inset Formula $kx_{1,2}\ll1$
+\end_inset
+
+ is not satified, which means Lamb-Dicke expansion can not works; 2.
+ 
+\begin_inset Formula $\tau\ll\frac{2\pi}{w_{trap}}$
+\end_inset
+
+ , which means the single operaation time 
+\begin_inset Formula $\tau$
+\end_inset
+
+ is faster than than the trap period.
+ So when consider the evolution of the system during a single operation,
+ we don't need to consider the effect of 
+\begin_inset Formula $H_{m}$
+\end_inset
+
+.
+ Then if we generate a 
+\begin_inset Formula $\pi/2$
+\end_inset
+
+ ARP pulse: 
+\begin_inset Formula $\int\frac{\Omega_{eff}(t)}{2}dt=\pi/2$
+\end_inset
+
+, then the Unitary evolution after the operation can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+U & =e^{\frac{i}{\hbar}\int H_{I}(t)dt}\\
+ & =e^{i\pi/2(\sigma_{1x}e^{2ikx_{!}\sigma_{1z}}+\sigma_{2x}e^{2ikx_{2}\sigma_{2z}})}\\
+ & =\sigma_{1x}\sigma_{2x}e^{2ikx_{!}\sigma_{1z}}e^{2ikx_{2}\sigma_{2z}},
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using the formula 
+\begin_inset Formula $e^{i\theta\sigma\cdot n}=\cos(\theta)I+\sin(\theta)\sigma\cdot n$
+\end_inset
+
+.
+ Notice that the evolution corresponds to state-dependent momontum kick
+ and the state flipping.
+ In order to realize the ideal C-phase gate, the number of kicks once should
+ equal to 2n to return the orignial state.
+ So under the ideal situation, the momentum transfer has the form of:
+\begin_inset Formula 
+\begin{equation}
+\Delta p=\Sigma_{i=1}^{N}\delta(t-t_{i})4\hbar n_{i}k
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where N is the total number of the kick operations, 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ is when the ith kick happens and 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ is the number of rabi flippings during ith kick.
+ The ions will experience free evolution between kicks.
+ So we want the final Unitary operation has the form of:
+\begin_inset Formula 
+\begin{equation}
+U_{F}=e^{i\pi/4\sigma_{1z}\sigma_{2z}}e^{-i\tau(\omega_{c}a_{c}^{+}a_{c}+\omega_{s}a_{s}^{+}a_{s})}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then the optimization goal can be required as: 1.
+ desired phase accumlated 2.
+ restoring the motional state of each mode.
+ The requirement can be written as following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Theta=4\eta^{2}\sum_{m=2}^{N}\sum_{k=1}^{m-1}n_{m}n_{k}\left[\sin(\omega_{c}(t_{m}-t_{k}))-\frac{\sin(\omega_{s}(t_{m}-t_{k}))}{\sqrt{3}}\right]=\frac{\pi}{4}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "C:/Users/scientist/Desktop/haoqing/Fastgate/FastOperation/FastOperation"
+bibfiles "/Users/zhq/Documents/GitHub/Fastgate/FastOperation/FastOperation"
 options "plainnat"
 
 \end_inset
