@@ -1,0 +1,2169 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\options aps, prl, reprint, superscriptaddress
+\use_default_options false
+\begin_modules
+subequations
+tcolorbox
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes true
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author 215387671 "Apple"
+\author 315510815 "Jin-Ming Cui"
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Example of document setting in latex:
+\end_layout
+
+\begin_layout Plain Layout
+%
+\backslash
+documentclass[aps, prl, reprint, superscriptaddress]{revtex4-1}
+\end_layout
+
+\begin_layout Plain Layout
+REV\SpecialChar TeX
+ document:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://journals.aps.org/revtex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://journals.aps.org/files/revtex/summary4-1.pdf
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Preprint
+USTC/V0
+\end_layout
+
+\begin_layout Title
+Scalable Fast Gates for trapped ion qubits by utilizing programable Raman
+ Adiabatic Rapid Passage laser pulses
+\end_layout
+
+\begin_layout Author
+Hao-Qing Zhang
+\end_layout
+
+\begin_layout Affiliation
+CAS Key Laboratory of Quantum Information, University of Science and Technology
+ of China, Hefei, 230026, China.
+\end_layout
+
+\begin_layout Affiliation
+CAS Center For Excellence in Quantum Information and Quantum Physics, University
+ of Science and Technology of China, Hefei, 230026, China.
+\end_layout
+
+\begin_layout Author
+Jin-Ming Cui
+\end_layout
+
+\begin_layout Author Email
+jmcui@ustc.edu.cn
+\end_layout
+
+\begin_layout Affiliation
+CAS Key Laboratory of Quantum Information, University of Science and Technology
+ of China, Hefei, 230026, China.
+\end_layout
+
+\begin_layout Affiliation
+CAS Center For Excellence in Quantum Information and Quantum Physics, University
+ of Science and Technology of China, Hefei, 230026, China.
+\end_layout
+
+\begin_layout Author
+Yun-Feng Huang
+\end_layout
+
+\begin_layout Author Email
+hyf@ustc.edu.cn
+\end_layout
+
+\begin_layout Affiliation
+CAS Key Laboratory of Quantum Information, University of Science and Technology
+ of China, Hefei, 230026, China.
+\end_layout
+
+\begin_layout Affiliation
+CAS Center For Excellence in Quantum Information and Quantum Physics, University
+ of Science and Technology of China, Hefei, 230026, China.
+\end_layout
+
+\begin_layout Author
+Chuan-Feng Li
+\end_layout
+
+\begin_layout Author Email
+cfli@ustc.edu.cn
+\end_layout
+
+\begin_layout Affiliation
+CAS Key Laboratory of Quantum Information, University of Science and Technology
+ of China, Hefei, 230026, China.
+\end_layout
+
+\begin_layout Affiliation
+CAS Center For Excellence in Quantum Information and Quantum Physics, University
+ of Science and Technology of China, Hefei, 230026, China.
+\end_layout
+
+\begin_layout Author
+Guang-Can Guo
+\end_layout
+
+\begin_layout Affiliation
+CAS Key Laboratory of Quantum Information, University of Science and Technology
+ of China, Hefei, 230026, China.
+\end_layout
+
+\begin_layout Affiliation
+CAS Center For Excellence in Quantum Information and Quantum Physics, University
+ of Science and Technology of China, Hefei, 230026, China.
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Robustly scaling quantum gate is one of the most central task in quantum
+ information research.
+ ultrafast gate based on momentum kicks induced by laser pulse is a promising
+ , however it is hindered by the current technology xxxx.
+ Here, we propose a scheme base on xxxx on 171Yb+ ions.
+ The scheme is xxx, which is sufficiently realized based on current laser
+ technology.
+ Our scheme
+\end_layout
+
+\begin_layout PACS
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Need to change in the future
+\end_layout
+
+\end_inset
+
+33.15.Ta
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+At present, entanglement gate in trapped ion platform is mainly based on
+ geometric phase gate scheme.
+ There are two ways to achieve ideal geometric phase gate, both of which
+ require the evolution of a closed path in the phase space of the ion motion
+ and the area of the closed path corresponds to the geometric phase 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "roos2008ion"
+literal "false"
+
+\end_inset
+
+.
+ The first approach is an approximate adiabatic evolution: a periodic driving
+ force is applied to a pair of ions, requiring the driving force to oscillate
+ at a frequency near a particular phonon mode frequency 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leibfried2003experimental"
+literal "false"
+
+\end_inset
+
+; and fast two-bit entanglement gate within microsecond by the modulated
+ pulse amplitude of the driving force, by D.
+ Lucas group in Oxford 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "steane2014pulsed,schafer2018fast"
+literal "false"
+
+\end_inset
+
+.
+ In the case of multi-ion chains, Kihwan Kim's group in Tsinghua University
+ gives four ions entanglement gate on arbitrary ions pair with modulated
+ driving force phase; C.
+ Morone group in University of Maryland has come up with a scheme on 11
+ ions for the optimized modulated driving force frequency, which is robust
+ against (3 kHz) of laser frequency fluctuation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leung2018robust"
+literal "false"
+
+\end_inset
+
+; and the benchmark for any two-bit gate with 11 ions 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wright2019benchmarking"
+literal "false"
+
+\end_inset
+
+, where the average fidelity of the gate is 97.5%, including the error of
+ state reading and preparation (SPAM).
+ When the number of ions in the crystal is large, crowded phonon mode spectrums
+ will be generated.
+ It would be hard to address only the desired phonon mode to generate geometric
+ phase, so inevitably affected by phonon modes of adjacent frequency, thus
+ affecting the fidelity of phase gate 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "duan2004scaling,zhu2006arbitrary"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Another method is based on the scheme of fast momentum transfer, which uses
+ fast laser pulses to generate instantaneous pulses on the ions, and several
+ instantaneous pulses to form a closed path in the phase space, which can
+ also realize the geometric phase gate.
+ The original scheme was developed by Garćıa-Ripoll, Peter Zoller, and Ignacio
+ Cirac 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "garcia2003speed,garcia2005coherent"
+literal "false"
+
+\end_inset
+
+(GZC scheme).
+ Since the laser are addressed on particular ions, the instantaneous impulse
+ will only act on operated ions because the action time of the instantaneous
+ pulse is far faster than the trap period (
+\begin_inset Formula $\tau\ll\frac{2\pi}{\omega_{\text{trap}}}$
+\end_inset
+
+); and large phase space displacement, even exceed Lamb-Dicke region (
+\begin_inset Formula $kx_{0}\ll1$
+\end_inset
+
+).
+ The geometric phase can be realized by optical addressing the two ions
+ on the ion chain and designing a suitable pulse scheme.
+ In principle, this scheme is not limited by the number of ions, so it has
+ good scalability 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bentley2015trapped"
+literal "false"
+
+\end_inset
+
+; what's more, the GZC scheme can theoretically achieve an arbitrarily fast
+ gate velocity with an increase in the number of momenta transferred, which
+ satisfies the relationship of 
+\begin_inset Formula $T_{\text{Gate}}\propto N_{\text{pulse}}^{-2/3}$
+\end_inset
+
+.
+ Compared with the adiabatic gate scheme, this scheme can get faster gate
+ speed and scalability; but this kind of scheme need high quality pulse
+ laser.
+\end_layout
+
+\begin_layout Standard
+The international research group mainly adopts the mode-locked laser scheme
+ to generate fast pulse control, while the high-fidelity entanglement gate
+ control requires the mode-locked laser with high repetition frequency (far
+ faster than the trap period), can resonate with the ion level, and strong
+ pulse energy enough to complete the ion excitation with a single pulse.
+ The C.
+ Monroe group uses a coherent mode-locked laser to achieve single-bit manipulati
+on on the order of tens of ps, requiring two pulses to complete a single
+ bit flip.
+ They achieve the fast single flipping with infidelity around 
+\begin_inset Formula $10^{-2}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "campbell2010ultrafast,mizrahi2014quantum"
+literal "false"
+
+\end_inset
+
+, but the laser's repetition rate is only about 80 MHz 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "islam2014beat"
+literal "false"
+
+\end_inset
+
+.
+ The group is studying fast entanglement using this fast single-bit operation
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "johnson2017ultrafast"
+literal "false"
+
+\end_inset
+
+, they report two-bit entanglement gate in 19 
+\begin_inset Formula $\text{\ensuremath{\mu}}$
+\end_inset
+
+s, with gate fidelity around 75%.
+ Due to the low repetition frequency of the laser, the pulse interval cannot
+ be controlled, so more than 300 pulses are needed to realize a single entanglem
+ent gate.
+ The innsbruck R.
+ Blatt team used a custom fiber optic comb scheme to select a repeat frequency
+ of 5 GHz 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "heinrich2019ultrafast"
+literal "false"
+
+\end_inset
+
+pulsed laser, The average monopulse power can reach 10 mW and the wavelength
+ is 393 nm, is used to manipulate 
+\begin_inset Formula $^{40}\text{Ca}^{+}$
+\end_inset
+
+ ions.
+ They show the excitation to 
+\begin_inset Formula $^{4}P_{3/2}$
+\end_inset
+
+ with 96% fidelity and to 
+\begin_inset Formula $^{3}D_{5/2}$
+\end_inset
+
+ with 75% fidelity.
+ However, the operation is complicated and the monopulse fidelity is still
+ low.
+ The J.
+ Hope group in Australia made a fiber optic mode-locked laser with a repetition
+ frequency up to 300 MHz 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hussain2016ultrafast"
+literal "false"
+
+\end_inset
+
+, wavelength 369 nm for manipulating 
+\begin_inset Formula $^{171}\text{Yb}^{+}$
+\end_inset
+
+ ions.
+ The laser produces a 2.5 ps violet pulse with a maximum power of 190 mW.
+ Then they analyze that the operating fidelity of the entanglement gate
+ can reach up to 99% theoretically with that laser.
+ Based on the problem of limited repetition frequency, they came up with
+ the idea of microtrap to further improve the scalability and fidelity of
+ gates 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "taylor2017study,ratcliffe2018scaling,ratcliffe2019micromotion"
+literal "false"
+
+\end_inset
+
+; new pulses train scheme (Fast Robust Antisymmetric Gate 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bentley2013fast"
+literal "false"
+
+\end_inset
+
+) and pulse time optimization method 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gale2019optimised"
+literal "false"
+
+\end_inset
+
+.
+ Without considering the fidelity of single-bit flip, the theoretical calculatio
+n shows in order to achieve a repetition frequency above 5GHz to achieve
+ 99.99% fidelity.
+ The single-bit error rate of 
+\begin_inset Formula $10^{-6}$
+\end_inset
+
+ is required to obtain the fidelity of more than 99.9% of the entanglement
+ gate when the single-bit operating error is considered 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bentley2015trapped,gale2019optimised"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Here we proposed a scheme to realize fast ion gate based on spin dependent
+ kicks (SDKs) with 
+\change_deleted 215387671 1593358144
+ 
+\change_unchanged
+Raman Adiabatic Rapid Passage (RARP) pulses on Yb+ ions.
+ The RARP pulses will be generated by modulating continuous laser through
+ high peed electrical optical modulators (EOMs) and a high-speed arbitrary
+ wave generator (AWG).
+ Comparing with the the current ultrafast laser pulses schemes based on
+ mode locked lasers, our scheme will not be restricted by the repetition
+ rate of mode lock lasers, which contributes a promising technology solution
+ to implement fast gate based on SDKs.
+ With the advantage of high fidelity, flexible controllability and easy
+ realization, it will improve the feasibility of fast gates schemes based
+ on SDKs to perform quantum computation, and take the scalability advantage
+ of these gate schemes ever further.
+
+\change_deleted 215387671 1593358144
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+To illustrate the scheme in detail, the text will be organized as following.
+ Firstly, we show how to use a RARP pulse to flip the ion qubit with high
+ fidelity and generate a spin dependent kick (SDK) on the ion motion.
+ Then, we will construct multiple RARP pulses to generate the spin dependent
+ kicks (SDKs) to complete a kick group, and arrange the multiple kick group
+ in sequence to perform two qubit gate schemes, such as FRAG
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+.
+ The gate fidelity in each step is studied.
+ As the crucial technical point of the scheme is to realize the laser operation
+ of the RARP, in the last section we also present a promising laser configuratio
+n to support it.
+ The laser configuration is totally realizable based on currently technology,
+ which is mainly based on inferred seed laser amplifying based on high power
+ Yb-doped fiber amplifiers, three harmonic generation (THG) by periodic
+ polarized crystals and high speed modulation of the seed laser by fiber
+ electrical optical modulators (EOMs).
+ By programing a high-speed arbitrary wave generator (AWG) to modulate the
+ EOMs, the required RARP pulses sequence can be flexibly generated.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Here, you need to clear the main point, guide the reader to get your main
+ idea and see the framework of your work.
+ To much details will distract the reader.
+ Details can be be described step by step in the next section, there you
+ have enough space to talk .
+ So here, you must extract the main points and the exciting points to attract
+ readers.
+ The words should be controlled not too long.
+ You can try to do more work here, to further improve it.
+ This practice can advance you writing skill much.
+
+\change_deleted 215387671 1593358144
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+The pulse scheme is proposed in 1990s ..
+ , And may works have been done in the past decades ........., Although these types
+ of have the attractive scalability with trapped ions, however, the fidelity
+ of the realized quantum gates based on these schemes still not reach the
+ threshold of quantum error correction.
+ In the previous experimental research, the SDK pulses are provided by mode
+ locked lasers.
+ As the pulse waveform and the duration between pulses is hard to precisely
+ controlled, realizing a high fidelity gate requires a mode lock with a
+ high repetition rate.
+ For example, it theoretically can reach ....
+ with a laser of 5 GHz repetition rate.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+cite some reference
+\end_layout
+
+\end_inset
+
+ It demands to lot effort to realize such laser
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+cite OE article and Blatt comb article
+\end_layout
+
+\end_inset
+
+, and full control of the laser pulses will be challenging.
+ As the mode locked hinder the SDK schemes, we try to design a scheme not
+ rely on mode locked lasers.
+
+\change_deleted 215387671 1593358167
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Subsection
+Quantum gate with fast kick
+\end_layout
+
+\begin_layout Standard
+We suppose the Raman laser can be generated by modulating a continues laser,
+ which leads to the laser pulse can be programmed to any desired waveform.
+ Consequently, we can construct a single Raman pulse to flip the ...
+ with high fidelity to transfer the momentum of photons to an ion.
+
+\change_deleted 215387671 1593358167
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Subsubsection
+Fast operation with Raman Adiabatic Rapid Passage pulse
+\end_layout
+
+\begin_layout Standard
+Here we propose to use Adiabatic Rapid Passage (ARP) pulse for the spin-dependen
+t kick sequence.
+ The technique is also used in atom interferometry, which separate paths
+ of different energy level and accumulate the difference phase between different
+ paths.
+ There have been large areas and momentum transfers reported 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "muller2008atom,kotru2015large"
+literal "false"
+
+\end_inset
+
+.
+ ARP is also used in the ion trap on states shuttling and motional states
+ cooling 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wunderlich2007robust"
+literal "false"
+
+\end_inset
+
+.
+ We find that with increasing the power of pulses (which is also the requirement
+ of addressing single ion) and optimizing the parameters, high speed and
+ fidelity single qubit flipping and fast two qubit entanglement gate in
+ hundreds nanosecond level could be achieved.
+ More importantly, with the high sampling rate Arbitrary Function Generator
+ (AWG), the wave packet, phase and the sequences time of the pulse could
+ be controlled precisely and modulated continuously, which get rid of the
+ problem of the repetition rate.
+ Along with so many novel pulse sequences design, sub-microsecond level
+ entanglement gate could be reached.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/fig_1.svg
+	width 8.6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EightEnergyLevel"
+
+\end_inset
+
+Operation proposal with based on Raman 
+\change_deleted 215387671 1593358176
+ 
+\change_unchanged
+Adiabatic Rapid Passage (RARP) laser pulse.
+ (a) GZC (Garćıa-Ripoll, Peter Zoller, and Ignacio Cirac) scheme in our
+ realization.
+ The pulse sequences are separated into integer groups, with in each group
+ momentum transferring in the same direction.
+ Here the fast flipping is realized with the fast AWG (Arbitrary Function
+ Generator) modulated CW laser, which benefits for high controllability
+ of the sequence time and phase without the limit of repetition rate.
+ The sequence time of each pulse is shift by the operation time of each
+ kicks from the ideal optimized condition, for considering actual gate time.
+ (b) spin-dependent momentum kick.
+ Here intensity of the bi-chromatic laser 
+\begin_inset Formula $I_{x,y}$
+\end_inset
+
+ satisfies Eq.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ with frequency
+\begin_inset Formula $\omega_{x,y}=\Delta\mp\delta_{\text{HF}}$
+\end_inset
+
+.
+ Bi-chromatic lights propagate in opposite direction and shine perpendicularly
+ to the ion chain.
+ When the first 
+\begin_inset Formula $\pi$
+\end_inset
+
+ pulse flips the qubit state, laser intensity and frequency need to be switched
+ to keep kicking in the same direction with fixed polarization.
+ (c) Energy level and RARP pulse diagram.
+ Qubit states are encoded onto the hyperfine energy levels of 
+\begin_inset Formula $^{171}\mathrm{Yb}^{+}$
+\end_inset
+
+ ion (
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+).
+ The ions will absorb a photon to the virtual energy level and emit another
+ photon which gives the spin-dependent momentum transfer of 
+\begin_inset Formula $2\hbar k$
+\end_inset
+
+.
+ The bi-chromatic lights have a large single-photons detuning 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ and time-dependent two-photons detuning 
+\begin_inset Formula $\delta(t)$
+\end_inset
+
+.
+ Static magnetic field separate the Zeeman energy levels and lights with
+ polarization 
+\begin_inset Formula $\sigma_{x},\sigma_{y}$
+\end_inset
+
+ couple between Zeeman energy levels.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\emph on
+Method
+\emph default
+ We make a model of eight energy level 
+\begin_inset Formula $^{171}\mathrm{Yb}^{+}$
+\end_inset
+
+ ions which shows in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EightEnergyLevel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The qubits are encoded onto the ground hyperfine states of 
+\begin_inset Formula $^{171}\mathrm{Yb}^{+}$
+\end_inset
+
+ ions: 
+\begin_inset Formula $^{2}S_{1/2}\left|F=0,m_{F}=0\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $^{2}S_{1/2}\left|F=1,m_{F}=0\right\rangle $
+\end_inset
+
+ with an energy splitting 
+\begin_inset Formula $\delta_{\mathrm{HF}}=2\pi\times12.6428$
+\end_inset
+
+ GHz.
+ The Raman beams are detuning by hundreds of GHz from 
+\begin_inset Formula $\mathbf{\textrm{2P_{1/2}}}$
+\end_inset
+
+ manifold, and they are far less than the 100 THz splitting between 
+\begin_inset Formula $^{2}P_{1/2}$
+\end_inset
+
+ and 
+\begin_inset Formula $^{2}P_{3/2}$
+\end_inset
+
+.
+ So we can neglect the coupling to the 
+\begin_inset Formula $^{2}P_{3/2}$
+\end_inset
+
+ manifold and only view 
+\begin_inset Formula $^{2}P_{1/2}$
+\end_inset
+
+ as the virtual energy level.
+ The hyperfine splitting in 
+\begin_inset Formula $^{2}P_{1/2}$
+\end_inset
+
+ manifold is 
+\begin_inset Formula $\delta_{1}=2\pi\times2105$
+\end_inset
+
+ MHz.
+ We then consider linear effect (
+\begin_inset Formula $2\pi\times1.4$
+\end_inset
+
+ MHz/G for 
+\begin_inset Formula $^{2}S_{1/2}$
+\end_inset
+
+ and 
+\begin_inset Formula $2\pi\times0.47$
+\end_inset
+
+ MHz/G for 
+\begin_inset Formula $^{2}P_{1/2}$
+\end_inset
+
+) and quadratic effect (
+\begin_inset Formula $2\pi\times310.8$
+\end_inset
+
+ Hz/
+\begin_inset Formula $\mathrm{G}^{2}$
+\end_inset
+
+) for 
+\begin_inset Formula $^{171}\mathrm{Yb}^{+}$
+\end_inset
+
+ Zeeman splitting under DC magnetic field, which defines the quantized axis.
+ In the following paper, we define the ground states 
+\begin_inset Formula $^{2}S_{1/2}\left|F=0,m_{F}=0\right\rangle \equiv\left|0\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $^{2}S_{1/2}\left|F=1,m_{F}=0\right\rangle \equiv\left|1\right\rangle $
+\end_inset
+
+, and the excited states 
+\begin_inset Formula $^{2}P_{1/2}\left|F=1,m_{F}=-1\right\rangle \equiv\left|e_{1}\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $^{2}P_{1/2}\left|F=1,m_{F}=1\right\rangle \equiv\left|e_{3}\right\rangle $
+\end_inset
+
+.
+ The qubits state 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1\right\rangle ,$
+\end_inset
+
+ as the transition between the two state is a clock transition, has a long
+ coherent time 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+reference.
+\end_layout
+
+\end_inset
+
+.
+ The transition could be driven via 
+\begin_inset Formula $\sigma^{+}$
+\end_inset
+
+ or 
+\begin_inset Formula $\sigma^{-}$
+\end_inset
+
+ polarization, meanwhile no dipole transition is allowed between 
+\begin_inset Formula $^{2}S_{1/2},m_{F}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $^{2}P_{1/2},m_{F}=0$
+\end_inset
+
+ via 
+\begin_inset Formula $\pi$
+\end_inset
+
+ polarization.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+the 
+\begin_inset Formula $\pi$
+\end_inset
+
+-polarized light cannot drive dipole transition between qubit states 
+\begin_inset Formula $^{2}S_{1/2},m_{F}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $^{2}P_{1/2},m_{F}=0$
+\end_inset
+
+ energy level for corresponding dipole matrixes equal to zero (selection
+ rule).
+ Then consider linear polarized light, which could be decomposed into 
+\begin_inset Formula $\sigma^{\pm}$
+\end_inset
+
+ polarized light: 这句话逻辑还要好好写写, 这句话这么写显然表达不对
+\end_layout
+
+\end_inset
+
+We apply 
+\begin_inset Formula $\sigma_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{y}$
+\end_inset
+
+ polarization light to drive the Raman Process, which can decomposed to
+ two circle polarized lights respectively as
+\begin_inset Formula 
+\begin{align}
+\sigma_{x} & =\frac{1}{2}(\sigma^{+}+\sigma^{-})\nonumber \\
+\sigma_{y} & =\frac{1}{2}(\sigma^{+}-\sigma^{-}),
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma^{+}$
+\end_inset
+
+ polarized light can couple 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+ to 
+\begin_inset Formula $\left|e_{1}\right\rangle $
+\end_inset
+
+, while 
+\begin_inset Formula $\sigma^{-}$
+\end_inset
+
+ polarized light can couple 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+ to 
+\begin_inset Formula $\left|e_{3}\right\rangle $
+\end_inset
+
+.
+ The intensity of the bi-chromatic lights are set to satisfy the condition
+\begin_inset Formula 
+\begin{equation}
+\frac{I_{x}}{I_{y}}=\frac{\Delta-\delta_{\text{HF}}}{\Delta+\delta_{\text{HF}}},\label{eq:3}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ is the single-phonon detuning between driven laser and the dipole transition.
+ As AC-stark shifts are proportional to 
+\begin_inset Formula $\frac{I}{\Delta}$
+\end_inset
+
+, we could then obtain the relationship: 
+\begin_inset Formula $\frac{I_{x}}{\Delta}+\frac{I_{y}}{\Delta+\delta_{\text{HF}}}=\frac{I_{y}}{\Delta}+\frac{I_{x}}{\Delta-\delta_{\text{HF}}}$
+\end_inset
+
+ to cancel the first order AC-stark shift on the qubit level caused by two
+ laser light beams.The concept of RARP methods are widely used in nuclear
+ resonance and atomic physics for robust two energy level system transition.
+ For the Raman ARP (the scheme is shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EightEnergyLevel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), the whole system can be viewed as an effective two-level system: the
+ Rabi frequency is the two-phonon 
+\begin_inset Formula $\Omega_{\text{eff}}$
+\end_inset
+
+ here; the detuning across the resonance is the two-phonon detuning sweeping
+ during the inversion of population, where 
+\begin_inset Formula $\delta(t)=\delta_{\text{HF}}-(w_{y}-w_{x})$
+\end_inset
+
+.
+ Similar to the two level condition, the Bloch vector 
+\begin_inset Formula $\text{\ensuremath{\vec{s}}}$
+\end_inset
+
+ will precesses around the effective rotation axis 
+\begin_inset Formula $|\Omega(t)|=\sqrt{\Omega_{\text{eff}}^{2}(t)+\delta^{2}(t)}$
+\end_inset
+
+, which satisfies:
+\begin_inset Formula 
+\begin{equation}
+\frac{d\vec{s}}{dt}=\vec{\Omega}\times\vec{s},
+\end{equation}
+
+\end_inset
+
+if the Bloch vector can adiabatically follow 
+\begin_inset Formula $\vec{\Omega}(t)$
+\end_inset
+
+ on the Bloch spheres from one pole to another.
+ We generate the RARP pulse with time-dependent intensity envelope 
+\begin_inset Formula $I(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta(t)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+I_{x,y}(t) & =I_{x,y}\sin^{2}(\pi t/\tau)\nonumber \\
+\delta(t) & =\delta_{0}\cos(\pi t/\tau),\label{eq:5}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\text{\ensuremath{\tau}}$
+\end_inset
+
+ is the whole operation time for a single flipping, 
+\begin_inset Formula $\delta_{0}$
+\end_inset
+
+ is the two photon detuning and 
+\begin_inset Formula $I_{x,y}$
+\end_inset
+
+ are the intensity of the bi-chromatic laser.
+ Advantage compare to the Stimulate Raman Process (STIRAP)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kotru2015large"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+需要添加RARP和STIRAP比较起来的优点
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/fiedlity_2.pdf
+	width 8.6cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:parameter"
+
+\end_inset
+
+ Single qubit flipping fidelity under different parameters.
+ (a) plots the gate infidelity verses laser intensity (in units of 
+\begin_inset Formula $^{171}\mathrm{Yb}^{+}$
+\end_inset
+
+ saturation intensity) with different 
+\begin_inset Formula $\Delta$
+\end_inset
+
+, with fixed single flipping duration 
+\begin_inset Formula $\tau=0.2$
+\end_inset
+
+ ns and two phonon detuning 
+\begin_inset Formula $\delta_{0}=2\pi\times7.05$
+\end_inset
+
+ GHz.
+ (b) fixed 
+\begin_inset Formula $\Delta=120$
+\end_inset
+
+ GHz and search parameters in the space of two photon detuning and laser
+ intensity.
+ The heat plot shows nanosecond-level single qubit flipping with fidelity
+ of 
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+ could be achieved with feasible laser intensity.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\emph on
+Simulation Result
+\emph default
+ We simulate the result of fast bit flipping in 
+\begin_inset Formula $\tau=0.2$
+\end_inset
+
+ ns with high fidelity (which corresponds to 5 GHz repetition rate).
+ In Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:parameter"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we search for optimized parameters of RARP pulse with different 
+\begin_inset Formula $\Delta$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{0}$
+\end_inset
+
+ and laser intensity 
+\begin_inset Formula $s$
+\end_inset
+
+ (in the unit of the saturation intensity for 
+\begin_inset Formula $^{2}P_{1/2}$
+\end_inset
+
+ manifold 
+\begin_inset Formula $I_{\mathrm{sat}}=510.3$
+\end_inset
+
+ W/
+\begin_inset Formula $m^{2}$
+\end_inset
+
+ ).
+ In Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fidelity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we study the high fidelity kick operation, 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ optimized to be 
+\begin_inset Formula $2\pi\times121.5$
+\end_inset
+
+ GHz and 
+\begin_inset Formula $\delta_{0}$
+\end_inset
+
+ is set to be 
+\begin_inset Formula $2\pi\times7.05$
+\end_inset
+
+ GHz, 
+\begin_inset Formula $I_{y}$
+\end_inset
+
+ is set to be 
+\begin_inset Formula $I_{\mathrm{sat}}\times10^{7}$
+\end_inset
+
+ and 
+\begin_inset Formula $\tau$
+\end_inset
+
+ is still fixed to be 0.2 ns.
+ Tenflipping operation are shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fidelity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(a), where cyan curves simulate state population in 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+ with initial state on 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ and blue curves deal with initial state on 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+.
+ After a single flipping, the qubit state has switched between 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+.
+ In order to further kicking in the same direction, with the polarization
+ fixed, laser intensity and frequency need to be switched as in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EightEnergyLevel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(b).
+ We show in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fidelity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(b) and (c), for the flexibility of our scheme to control amplitude and
+ phase, the trajectory on the Bloch sphere could be controlled for higher
+ kick fidelity: when finishing the first flipping, the second flipping on
+ the Bloch sphere can reverse the trajectory of the first one, with additional
+ minus sign of the effective two level Hamiltonian of the system (
+\begin_inset Formula $H_{\text{eff}}^{'}=-H_{\text{eff}}=-\Omega_{\text{eff}}(t)\sigma_{x}-\delta(t)\sigma_{z}$
+\end_inset
+
+).
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/fiedlity_3.pdf
+	width 8.6cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fidelity"
+
+\end_inset
+
+ Kick scheme with multiple single qubit flipping.
+ 
+\begin_inset Formula $\tau$
+\end_inset
+
+ is set to be 0.2 ns, with 
+\begin_inset Formula $I_{y}=I_{\text{sat}}\times10^{7}\times2$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{0}$
+\end_inset
+
+ = 
+\begin_inset Formula $2\pi\times7.05$
+\end_inset
+
+ GHz; 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ optimized to be 
+\begin_inset Formula $2\pi\times121.5$
+\end_inset
+
+ GHz.
+ The static magnetic field for Zeeman splitting is selected to be 10 Gauss.
+ (a) shows the population at the 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+ state verse time during one kick, the cyan curve with initial state on
+ 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ and the blue curve with initial state on 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+.
+ A kick operation could be finished in 2 ns (flipping ten times) with 0.2
+ ns single 
+\begin_inset Formula $\pi$
+\end_inset
+
+flipping.
+ (b) and (c): kick performance with two different originations of flipping.
+ In (b), blue dots simulate the kick infidelity of the first Bloch trajectory
+ in (c) and the cyan dots simulate for second one.
+ The kick infidelity could maintain lower than 
+\begin_inset Formula $10^{-3}$
+\end_inset
+
+ even after twenty flipping (transferring of 
+\begin_inset Formula $40\hbar k$
+\end_inset
+
+ spin-dependent momentum).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+fast entanglement gate with state-dependent momentum kick
+\end_layout
+
+\begin_layout Standard
+The frame work of the fast gate is first proposed by Cirac and Zoller 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "garcia2003speed"
+literal "false"
+
+\end_inset
+
+ with many tries to realized in experiments 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mizrahi2014quantum,johnson2017ultrafast,ratcliffe2018scaling,ratcliffe2019micromotion"
+literal "false"
+
+\end_inset
+
+.
+ Here we try to give a feasible scheme with the RARP pulse mentioned above.
+ The key is we propose to use the fast AWG modulated CW laser instead of
+ pulse laser, which get rid of the problem of reputation rate.
+ So the sequence time and phase control could be more flexible and precise.
+ The basic idea is that the operation is faster than the trap frequency
+ so the ions get a big momentum transfer without moving.
+ If we consider the simple case: we have two ions and both irradiated by
+ the bi-chromatic light with the same intensity (same effective Rabi frequency
+ 
+\begin_inset Formula $\Omega_{\text{eff}}(t)$
+\end_inset
+
+ ) and single ion addressing.
+ The Hamilton can be written as: 
+\begin_inset Formula $H=H_{m}+H_{I}$
+\end_inset
+
+, where:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+H_{m} & =\hbar\omega_{c}a_{c}^{+}a_{c}+\hbar\omega_{s}a_{s}^{+}a_{s},\nonumber \\
+H_{I} & =\hbar\frac{\Omega_{\text{eff}}(t)}{2}(\sigma_{1}^{+}e^{2ikx_{1}}+\sigma_{2}^{+}e^{2ikx_{2}}+H.C.)\nonumber \\
+ & =\hbar\frac{\Omega_{\text{eff}}(t)}{2}\left(\begin{array}{cc}
+0 & e^{2ikx_{1}}+e^{2ikx_{2}}\\
+e^{-2ikx_{1}}+e^{-2ikx_{2}} & 0
+\end{array}\right)\nonumber \\
+ & =\hbar\frac{\Omega_{\text{eff}}(t)}{2}(\sigma_{1x}e^{2ikx_{1}\sigma_{1z}}+\sigma_{2x}e^{2ikx_{2}\sigma_{2z}}),
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\omega_{c,s}$
+\end_inset
+
+ are the frequencies of Center-Of-Mass mode (COM) and Stretch Mode (SM),
+ 
+\begin_inset Formula $a_{c,s}^{+},a_{c,s}$
+\end_inset
+
+ is the form and annihilation operation for the corresponding mode, 
+\begin_inset Formula $\sigma_{ix,z}$
+\end_inset
+
+ is the Pauli operation of the 
+\begin_inset Formula $i$
+\end_inset
+
+th operated ion, 
+\begin_inset Formula $H_{m,I}$
+\end_inset
+
+ correspond to the Hamiltonian of phonon mode and ion-laser interaction.
+ As mentioned in the introduction for the GZC scheme, when considering the
+ evolution of the system during a single operation, the effect of 
+\begin_inset Formula $H_{m}$
+\end_inset
+
+ can be neglected.
+ If we generate a 
+\begin_inset Formula $\text{\ensuremath{\pi}}$
+\end_inset
+
+ RARP pulse with 
+\begin_inset Formula $\int\frac{\Omega_{\text{eff}}(t)}{2}dt=\pi/2$
+\end_inset
+
+, the unitary evolution after the operation can be written as
+\begin_inset Formula 
+\begin{align}
+U & =e^{\frac{i}{\hbar}\int H_{I}(t)dt}\nonumber \\
+ & =e^{i\pi/2(\sigma_{1x}e^{2ikx_{1}\sigma_{1z}}+\sigma_{2x}e^{2ikx_{2}\sigma_{2z}})}\nonumber \\
+ & =\sigma_{1x}\sigma_{2x}e^{2ikx_{1}\sigma_{1z}}e^{2ikx_{2}\sigma_{2z}},
+\end{align}
+
+\end_inset
+
+with the formula 
+\begin_inset Formula $e^{i\theta\sigma\cdot n}=\cos\theta+\sin(\theta)\sigma\cdot n$
+\end_inset
+
+.
+ Notice that the evolution could be understood as state-dependent momentum
+ kick accompanied by the internal state flipping.In GZC proposal, symmetries
+ pulse sequence gives as shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EightEnergyLevel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(a),
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+t & =[-t_{3},-t_{2},-t_{1},t_{1},t_{2},t_{3}]\\
+n & =[2n,-3n,2n,-2n,3n,-2n].\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/fidelity_4.pdf
+	width 8.6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:kick"
+
+\end_inset
+
+ Feasibility of the two qubits fast entanglement gate scheme.
+ (a) plots phase space trajectory in the rotation frame of COM and SM.
+ The blue curves consider ideal condition and the cyan curve consider limited
+ single flipping operation (0.5 ns) and infidelity during the single flipping
+ (
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+).
+ Parameters are optimized separately for ideal condition.
+ (b) shows the the whole entanglement gate fidelity verses single flipping
+ duration.
+ The gate fidelity is limited by the kick operation time and fidelity.
+ The dash line corresponds to the threshold for the proposal determined
+ by the flipping error.
+ (c) search parameter in laser intensity and flipping time space to reach
+ high fidelity single flipping.
+ fast and high fidelity operation could be reached with increasing the laser
+ intensity.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+So under the ideal situation (kick sequence are all instant without consider
+ the repetition rate of the pulses and operation infidelity), the momentum
+ transferring gives the form of
+\begin_inset Formula 
+\begin{equation}
+\Delta p(t)=\Sigma_{i=1}^{N}\delta(t-t_{i})4\hbar n_{i}k
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $N$
+\end_inset
+
+ is the total number of the kick operations, 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ is the 
+\begin_inset Formula $i$
+\end_inset
+
+th 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+check
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+t_i是第i次kick的时刻
+\end_layout
+
+\end_inset
+
+ kick moment and 
+\begin_inset Formula $2n_{i}$
+\end_inset
+
+ is the number of state flipping during 
+\begin_inset Formula $i$
+\end_inset
+
+th kick (notice every flipping transfer 
+\begin_inset Formula $2\hbar k$
+\end_inset
+
+ momentum).
+ The ions will experience free evolution between two kicks.
+ So the destination of the final unitary operation has the form of
+\begin_inset Formula 
+\begin{equation}
+U_{F}=e^{i\pi/4\sigma_{1z}\sigma_{2z}}e^{-i\tau(\omega_{c}a_{c}^{+}a_{c}+\omega_{s}a_{s}^{+}a_{s})}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The gate fidelity is given in the Ref.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bentley2015trapped"
+literal "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align}
+F_{0} & =\frac{1}{12}(6+e^{-4m_{\text{COM}}|\Delta x|^{2}}+e^{-4m_{\text{SM}}|\Delta y|^{2}}\nonumber \\
+ & +4e^{-(m_{\text{COM}}|\Delta x|^{2}+m_{\text{SM}}|\Delta y|^{2})}\cos\left(\Theta\right)),
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $m_{\text{COM, SM}}=\frac{1}{2}+n_{\text{COM, SM}}$
+\end_inset
+
+, and 
+\begin_inset Formula $n_{\text{COM, SM}}$
+\end_inset
+
+ is the mean phonon number before the gate of the COM or SM motional mode
+ respectively, 
+\begin_inset Formula $\Theta$
+\end_inset
+
+ is phase accumulated after the gate and 
+\begin_inset Formula $\Delta x,$
+\end_inset
+
+ 
+\begin_inset Formula $\Delta y$
+\end_inset
+
+ are thermalized phase space displacement of two modes.
+ The optimization target can be required as: desired phase accumulated equals
+ to 
+\begin_inset Formula $\pi/4$
+\end_inset
+
+ after the whole gate and restoring the motional state of each mode after
+ the whole gate.
+ 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ are the optimization values, which can be expressed as
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+是这个意思吗？
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{gather}
+\Theta=4\eta^{2}\sum_{m=2}^{N}\sum_{i=1}^{m-1}n_{m}n_{i}\left[\sin(\omega_{c}(t_{m}-t_{i}))-\frac{\sin(\omega_{s}(t_{m}-t_{i}))}{\sqrt{3}}\right]=\frac{\pi}{4}\nonumber \\
+\sum_{i=1}^{N}n_{i}e^{-iw_{c}t_{i}}=0\nonumber \\
+\sum_{i=1}^{N}n_{i}e^{-iw_{s}t_{i}}=0.
+\end{gather}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The phase space trajectory of the optimized COM and SM are plotted in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:kick"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(a) with 
+\begin_inset Formula $n=5$
+\end_inset
+
+ corresponding to 70 kicks in optimized 450 ns with gate infidelity 
+\begin_inset Formula $F_{0}$
+\end_inset
+
+ higher than 
+\begin_inset Formula $10^{-7}$
+\end_inset
+
+.
+ The plots are in the rotation frame (at the frequency of the corresponding
+ mode), so the momentum kicks are straight line while changing direction
+ for next kick with free evolution between two kicks.
+ The cyan curve is for the ideal condition while the blue curve simulate
+ real condition for single flipping duration equalling to 0.5 ns.
+ Without the limit of the gate repetition rate, the ideal condition could
+ be optimized to reach entanglement high gate fidelity.
+ In our scheme, as shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EightEnergyLevel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(a), sequence times could shifted by the finite kick time from optimized
+ values to cancel the operation time.
+ We could further consider the limits of our scheme in the detail.
+ The first one is the limited single flipping time.
+ In one way, decreasing the single flipping duration will need the linear
+ increasing the required laser intensity as shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:kick"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(c).
+ The linear kick in the momentum space is not a good approximation when
+ kick is slow.
+ From another point of view, the AWG sampling rate is limited, which could
+ not satisfies for the requirement for too fast modulation.
+ The second limit is the single kick or flipping fidelity.
+ In ref.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gale2019optimised"
+literal "false"
+
+\end_inset
+
+, the gate infidelity with the imperfect 
+\begin_inset Formula $\text{\ensuremath{\pi}}$
+\end_inset
+
+flipping is given as 
+\begin_inset Formula $\epsilon=4N\epsilon_{0}F_{0}$
+\end_inset
+
+, where N represents for the total pulse pairs number during the gate and
+ 
+\begin_inset Formula $\epsilon_{0}$
+\end_inset
+
+ means single flipping error.
+ As in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:kick"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(b) and (c), with increasing the single flipping duration, the gate would
+ reach it's limit setting by the imperfect 
+\begin_inset Formula $\text{\ensuremath{\pi}}$
+\end_inset
+
+flipping.
+ 
+\begin_inset Formula $\epsilon_{0}=5\times10^{-5}$
+\end_inset
+
+ with single kick error around 
+\begin_inset Formula $5\times10^{-4}$
+\end_inset
+
+ could be reached in the simulation (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fidelity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(b) and Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:kick"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(c)) with the total gate fidelity lower than 99.6%.
+ 
+\begin_inset Formula $10^{-6}$
+\end_inset
+
+ or lower gate infidelity are required for the gate fidelity higher than
+ 99.9%.
+\end_layout
+
+\begin_layout Subsection
+Experimental Realization
+\change_inserted 315510815 1583744341
+
+\end_layout
+
+\begin_layout Standard
+To experimentally realize the RAP pulse operations, the key technical point
+ is to realize the operation Raman laser pulses.
+ Here we propose a 
+\change_deleted 215387671 1593358111
+ 
+\change_unchanged
+promising solution.
+ The main idea of the proposal is utilizing a three harmonic generation
+ (THG) process to generate 369 nm laser from 1109 nm laser, and using fiber
+ EOMs to modulate seed laser to generate the desired pulse.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:laser-config"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+shows one specific configuration.
+ The seed laser at 1109 nm is a single mode continuous laser, which can
+ be generated through a external cavity diode laser or a Yb fiber laser
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+.
+ The seed laser is divided into three lasers by a fiber beam splitter.
+ One of these lasers will be used as the seed laser for second harmonic
+ generation (SHG), and the other two lasers are used as seed lasers for
+ modulation.
+ The seed laser for SHG is amplified to a high power laser to 20 W through
+ a Yb fiber amplifier (YFA), and the amplified 1109 nm laser is the converted
+ to a high power laser at 554nm by a periodically-poled lithium niobate
+ (PPLN) crystal.
+ The seed lasers for modulation pass through two fiber EOMs, and then are
+ amplified by two fiber Yb amplifiers to powers of 10 W respectively.
+ Then the amplified modulated high power lasers are filtered with narrow
+ filters, as the EOMs can modulate the laser to 20 GHz, narrow filters with
+ bandwidth of 10GHz can select out one sideband of the modulated laser's
+ spectrum.
+ The selected sideband laser can be controlled by programming the modulation
+ function to form the desired laser pulse at 1109nm.
+ A high speed arbitrary wave generator (AWG) can be used to modulated the
+ EOMs, the programmable feature of the AWG can provide a high level of controlla
+bility in the waveform of single pulse.
+ Two groups of above pulse laser at 1109nm are then combined with the 554nm
+ high power laser, then pass through two periodically-poled MgO doped near
+ stoichiometric LiTaO
+\begin_inset Formula $_{3}$
+\end_inset
+
+ crystals (PPMgSLTs)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ to gain summing frequency generation processes respectively, and finally
+ implement the THGs to generate the final Raman laser at 369 nm.
+ With the about parameters and a conservative estimate, the generated power
+ of 554 nm can reach 5 W
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+, and the peak power of the 1109 nm pulse selected through the narrow filter
+ can reach 1W, so the achievable peak power of the Raman laser pulse will
+ be beyond 50 mW ,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+please tell the simulation paramter if you want to express this line.
+ Do not just give the result, give the parameter and reasons, make it reasonable
+ please.
+
+\change_deleted 215387671 1593358111
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+After theoretical simulation, the fast adiabatic Raman pulse of 200 ps is
+ used to control single ion, and the fidelity of spin force 
+\begin_inset Formula $\pi$
+\end_inset
+
+ inversion can reach 99.99%, and the fidelity of two-ion gate based on this
+ control can reach 99.7%.
+ At present, the number of trapped ions in the ion trap can reach about
+ 100.
+ Combining with this method, it is expected to realize high-fidelity capital
+ and programmable quantum control on this number of ions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/LaserScheme.svg
+	width 8.3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:laser-config"
+
+\end_inset
+
+Laser configuration for generation of the desired RARP pulse.
+ The pulse from 1109 nm laser (orange line) is divided into three parts:
+ top and bottom one sent into fiber EOM (Electro-Optic Modulator) and modulated
+ by the fast sampling rate AWG, then amplified by the Yb fiber amplifer
+ (YFA); the center one is first amplified by the YFA, then sent into periodicall
+y-poled lithium niobate (PPLN)( for second harmonic generation into 554
+ nm pulse (green line), later seperated into two orthogonal liner polarization.
+ 369nm Raman laser is generated from top and bottem modulated 1109 nm, 554
+ nm orthogonal polarization laser after going through periodically-poled
+ MgO doped near stoichiometric LiTaO
+\begin_inset Formula $_{3}$
+\end_inset
+
+(PPMgSLT ), based on summing frequency generation .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\change_inserted 315510815 1583747521
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 315510815 1583747522
+....
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "FastOperation"
+options "unsrt"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
